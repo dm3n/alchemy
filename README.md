@@ -4,7 +4,7 @@
 
 Daniel Ray Edgar, July 2026
 
-[Read the paper](main.pdf)
+[Read the paper](https://github.com/dm3n/embodied-agency-hypothesis/blob/main/main.pdf)
 
 ## The idea
 

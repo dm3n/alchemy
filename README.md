@@ -115,7 +115,7 @@ grant is not independent replication.
 9. The Great Work
 10. Become the Part
 
-The publication is 20 pages with 7,762 extracted words, 56 cited sources, two original
+The publication is 20 pages with 8,070 extracted words, 56 cited sources, two original
 diagrams, four proved theorems, and six falsifiable predictions. It contains no claim
 audit table.
 

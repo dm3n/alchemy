@@ -1,7 +1,8 @@
-# Primary documentary sources
+# Primary documentary sources for Alchemy
 
-These two public records are analyzed directly in the paper. They are included so the
-document-type argument can be audited against the exact source material.
+These two public records are analyzed directly in *Alchemy: A Formal Theory of
+Consciousness, Embodiment, and Materialization*. They are included so every documentary
+claim can be audited against the exact source material.
 
 ## U.S. Patent 6,506,148 B2
 
@@ -28,10 +29,16 @@ for a blinded, controlled, independently replicated multi-participant study.
 - Official archive: <https://www.cia.gov/readingroom/docs/CIA-RDP96-00788R001700210016-5.pdf>
 - SHA-256: `dff63304a51a547ae41141006314e67c7f100822621748b97192f64b09c6a05e`
 
-The memorandum is evidence that U.S. Army personnel analyzed the Monroe Institute's
-Gateway program and possible applications. Its conclusion proposes future experiments.
-CIA archival release establishes provenance and custody, not CIA authorship,
-experimental confirmation, or scientific endorsement.
+The memorandum is evidence that a U.S. Army officer analyzed the Monroe Institute's
+Gateway program and possible applications. It discusses hypnosis, biofeedback,
+meditation, kundalini, Hemi-Sync, patterning, and altered-state claims. Its conclusion
+proposes future experiments. CIA archival release establishes provenance and custody,
+not CIA authorship, experimental confirmation, or scientific endorsement.
+
+In the paper, Gateway is treated as a case of technological alchemy: an attempt to
+translate older disciplines of attention and transformation into a staged technical
+system. That interpretation concerns the structure of the program. It does not turn the
+memorandum's speculative mechanisms into established science.
 
 ## Evidence rule
 

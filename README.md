@@ -1,110 +1,122 @@
-# From Vision to Reality
+# Alchemy
 
-**A Formal Theory of Embodied Manifestation**
+**A Formal Theory of Consciousness, Embodiment, and Materialization**
 
 Daniel Ray Edgar, July 2026
 
-[Read the paper](https://github.com/dm3n/embodied-agency-hypothesis/blob/main/main.pdf)
+[Read the paper](https://github.com/dm3n/alchemy/blob/main/main.pdf)
 
-## The idea
+## Thesis
 
-Every human-made reality exists twice: first as a representation in a mind, then as a
-physical arrangement produced through action.
+Human beings can hold a form that does not yet exist, organize the body and identity
+around it, act from it, and stabilize its consequences in the physical world.
 
-This paper explains that passage with one causal chain:
+The paper defines this operation precisely:
+
+> Alchemy is the disciplined process by which an imaginal form is embodied, enacted,
+> and stabilized as material reality.
+
+Its causal chain is:
 
 ```text
-vision -> embodied state -> policy -> action -> physical change -> feedback
+imaginal form -> embodied state -> policy -> action -> world change -> feedback
 ```
 
-Visualization can change the future when it changes what a person notices, expects,
-rehearses, and does. The body determines which actions can be executed reliably.
-Action changes the physical world. Feedback improves the next attempt.
+Consciousness does not materialize a desired reality by escaping causality. It
+materializes reality by entering causality through a trained body, a coherent identity,
+repeated action, and correction by evidence.
 
-The paper calls this process **embodied manifestation**.
+## Three realms
 
-## Three planes
-
-- **Mental plane:** the image, goal, model, or desired future.
-- **Embodied plane:** attention, expectation, physiology, skill, and action readiness.
-- **Physical plane:** observable behavior, artifacts, relationships, institutions,
+- **Imaginal realm:** images, symbols, goals, identities, and models of possible
+  futures.
+- **Embodied realm:** attention, expectation, physiology, skill, identity, and action
+  readiness.
+- **Material realm:** observable artifacts, relationships, institutions, environments,
   and world states.
 
-The mental plane becomes physically consequential through an embodied agent. The paper
-uses *astral visualization* as a possible phenomenological description of vivid inner
-experience, not as an assumed physical substance.
+A future exists first as form. It becomes physically consequential when that form
+changes the policies of an embodied agent.
 
 ## Formal contribution
 
-For visualization `V`, biological state `B`, environment `E`, policy `pi`, and outcome
-`Y`, the central identity is:
+For imaginal target `I`, embodied state `B`, environment `E`, policy `pi`, and later
+world state `W`, the materialization operator is:
 
 ```tex
-P(Y | V,B,E)
+P(W_{t+1} | I_t,B_t,E_t)
 =
-\sum_{\pi}
-P(Y | \operatorname{do}(\pi),B,E)
-P(\pi | V,B,E).
+\sum_{\pi \in \Pi(B_t,E_t)}
+P(W_{t+1} | \operatorname{do}(\pi),B_t,E_t)
+P(\pi | I_t,B_t,E_t).
 ```
 
-It supports three proved results inside the stated causal model:
+The paper proves four results inside the stated model:
 
-1. **Mediation theorem:** if visualization does not change policy or action, it does
-   not change an external outcome under the ordinary causal graph.
-2. **Reachable-future theorem:** an embodied state that enables more effective
-   policies expands the set of futures a person can credibly reach.
-3. **Repetition theorem:** well-directed attempts compound the probability of
+1. **Mediation theorem:** if an imaginal form changes no mediator, it does not change
+   an external result under the ordinary causal graph.
+2. **Reachable-future theorem:** an embodied state that enables more reliable policies
+   can enlarge the set of reachable material futures.
+3. **Identity-convergence theorem:** repeated identity-consistent evidence makes an
+   enacted identity converge toward its target under a simple update rule.
+4. **Repetition theorem:** directed attempts increase the cumulative probability of
    material success.
 
-These are mathematical results within an explicit model. They do not claim that
+These are mathematical deductions from explicit assumptions. They are not claims that
 thought alone controls shielded external systems.
 
-## Evidence and boundaries
+## The alchemical grammar
+
+```text
+solve -> form -> embody -> enact -> coagulate -> assay
+```
+
+- **Solve:** interrupt an inherited pattern.
+- **Form:** specify and rehearse the reality to be created.
+- **Embody:** prepare the biological and psychological vessel.
+- **Enact:** apply force through behavior.
+- **Coagulate:** stabilize the new pattern in matter, relationship, or institution.
+- **Assay:** test the work against evidence and begin again.
+
+## Evidence
 
 The synthesis draws on:
 
 - mental imagery and implementation intentions;
 - expectation and placebo physiology;
-- bioelectric signaling and pattern regulation;
-- sleep, circadian timing, hydration, metabolism, inflammation, and food;
-- habits, notifications, attention capture, and environmental design;
+- identity-based motivation, self-perception, and habit;
+- bioelectric signaling and biological pattern regulation;
+- sleep, circadian timing, hydration, metabolism, inflammation, and nutrition;
+- notifications, attention capture, and environmental design;
 - contemplative practice and self-transcendent experience;
-- alchemy, kundalini, theosis, Christ consciousness, and sacred secretion as
-  interpretive maps of transformation.
+- Hermetic alchemy, kundalini, sacred secretion, theosis, and Christ consciousness as
+  maps of transformation.
 
-The paper also examines U.S. Patent 6,506,148 B2 and the 1983 Gateway memorandum. Both
-are genuine primary records showing proposed mechanisms and institutional inquiry.
-Neither is presented as conclusive experimental validation.
+The paper examines the 1983 Army memorandum *Analysis and Assessment of Gateway
+Process* as technological alchemy: an attempt to operationalize altered-state
+disciplines with audio, feedback, visualization, and staged practice. It also examines
+U.S. Patent 6,506,148 B2 as a genuine technical and legal record.
 
-The paper distinguishes molecular quantum effects from quantum timeline selection,
-DNA charge transport from semantic DNA programming, and measurable cardiac fields
-from unsupported claims about intention broadcasting.
-
-## Practical protocol
-
-1. Specify the physical target.
-2. Visualize the process and identity.
-3. Convert vision into implementation intentions.
-4. Prepare the body.
-5. Design the environment.
-6. Act and produce evidence.
-7. Measure, learn, and repeat.
+The exact documents are included in `sources/` with SHA-256 hashes. The evidence rule
+is explicit: institutional inquiry is not experimental confirmation, and a patent
+grant is not independent replication.
 
 ## Contents
 
-1. The Claim
-2. What Manifestation Means
-3. A Formal Model
-4. How Vision Enters the Body
-5. The Body Changes What Is Possible
-6. Evidence and Boundaries
-7. Ancient Maps of Transformation
-8. A Practical Materialization Protocol
-9. Predictions and Conclusion
+1. Alchemy Is the Human Operation
+2. The Three Realms
+3. The Human Vessel
+4. The Mathematics of Materialization
+5. Solve et Coagula
+6. Inner Alchemy
+7. Technological Alchemy
+8. The Counter-Alchemical Environment
+9. The Great Work
+10. Become the Part
 
-The compiled second edition is 16 pages with 5,866 extracted words, 52 cited sources,
-two original diagrams, three proved theorems, one claim-audit table, and seven
-falsifiable predictions.
+The publication is 20 pages with 7,762 extracted words, 56 cited sources, two original
+diagrams, four proved theorems, and six falsifiable predictions. It contains no claim
+audit table.
 
 ## Build
 
@@ -121,9 +133,10 @@ pdflatex -interaction=nonstopmode -halt-on-error main.tex
 
 ## Repository contents
 
-- `main.tex`: complete manuscript and original diagrams
-- `refs.bib`: research bibliography with DOI and source metadata
+- `main.tex`: complete manuscript, mathematics, and diagrams
+- `refs.bib`: bibliography with DOI and source metadata
 - `main.pdf`: compiled publication
 - `sources/`: exact patent and Gateway PDFs used in the documentary analysis
-- `docs/superpowers/specs/`: research and editorial design
+- `docs/research/`: source and evidence map
+- `docs/superpowers/specs/`: editorial and research design
 - `docs/superpowers/plans/`: end-to-end publication plan

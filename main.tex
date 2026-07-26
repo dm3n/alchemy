@@ -1,7 +1,6 @@
 % ============================================================
-% The Embodied Agency Hypothesis:
-% Bioelectric Regulation, Cognitive State, and the
-% Construction of Lived Reality
+% From Vision to Reality:
+% A Formal Theory of Embodied Manifestation
 % Daniel Ray Edgar
 % ============================================================
 \documentclass[11pt]{article}
@@ -13,7 +12,6 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{mathtools}
 \usepackage{bm}
-\usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{booktabs}
@@ -23,43 +21,37 @@
 \usepackage{caption}
 \usepackage{microtype}
 \usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric, fit, calc, backgrounds}
+\usetikzlibrary{arrows.meta, positioning, fit, calc, backgrounds}
 
 \definecolor{darkblue}{RGB}{0,60,120}
 \definecolor{medblue}{RGB}{0,100,200}
-\definecolor{lightblue}{RGB}{173,216,255}
-\definecolor{darkgray}{RGB}{80,80,80}
-\definecolor{medgray}{RGB}{150,150,150}
-\definecolor{amber}{RGB}{190,112,0}
-\definecolor{deepgreen}{RGB}{25,115,75}
+\definecolor{lightblue}{RGB}{220,236,250}
+\definecolor{palegreen}{RGB}{225,242,232}
+\definecolor{paleyellow}{RGB}{251,242,211}
+\definecolor{darkgray}{RGB}{75,75,75}
 
-\hypersetup{colorlinks=true, linkcolor=darkblue, citecolor=darkblue, urlcolor=medblue}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=darkblue,
+  citecolor=darkblue,
+  urlcolor=medblue
+}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
 
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
-\newtheorem{remark}[theorem]{Remark}
-
-\theoremstyle{definition}
 \newtheorem{prediction}{Prediction}
 
 \newcommand{\Aset}{\mathcal{A}}
 \newcommand{\Pset}{\Pi}
-\newcommand{\Eop}{\mathfrak{E}}
 \newcommand{\doop}{\operatorname{do}}
-\DeclareMathOperator*{\argmax}{arg\,max}
 
 \title{%
   \vspace{-0.5cm}
-  \textbf{The Embodied Agency Hypothesis:}\\[2pt]
-  \textbf{Bioelectric Regulation, Cognitive State, and the Construction of Lived Reality}
+  \textbf{From Vision to Reality:}\\[3pt]
+  \textbf{A Formal Theory of Embodied Manifestation}
   \vspace{0.3cm}
 }
 
@@ -73,1272 +65,711 @@
 \thispagestyle{empty}
 
 \begin{abstract}
-Claims about manifestation, bioelectricity, quantum biology, and human divinity
-circulate in a mixture of accurate physiology, disputed experiments, metaphysical
-interpretation, and invented precision. The mixture contains a real insight: bodily
-state changes what an agent can perceive, organize, and reliably bring about. This
-paper develops the \emph{Embodied Agency Hypothesis} (EAH), a bounded and testable
-account of that insight. I distinguish ontic reality, lived reality, and enacted
-future, then define an executable policy set and accessible future set. Intention
-changes the probabilities assigned to policies; biology constrains which policies can
-be represented and executed; action transmits the effect into the environment; and
-feedback updates the next cycle. Under the ordinary causal model, intention has no
-effect on an external outcome when its behavioral and environmental mediators are
-fixed.
+Every human-made reality exists twice: first as a representation in one or more
+minds, then as a physical arrangement produced through action. A building begins as
+a plan. A company begins as a model of a future institution. A changed life begins
+as an image of a person who does not yet fully exist. This paper develops a concise
+theory of that passage from vision to reality.
 
-The synthesis draws on bioelectric morphogenesis, electrophysiology, sleep and
-circadian disruption, metabolism, hydration, experimental inflammation,
-ultra-processed diets, the gut--brain axis, notification costs, habits, placebo
-mechanisms, motor imagery, implementation intentions, and contemplative practice. It
-also audits claims that words semantically program DNA, the heart has a privileged
-three-foot field, humans possess a fixed global processing rate, depression is quantum
-decoherence, and choices select quantum timelines. Molecular quantum effects are real;
-they do not establish a quantum cognitive computer or voluntary branch selection.
-Direct analyses of a monitor-manipulation patent and the declassified Gateway
-memorandum distinguish documentary provenance from experimental validation.
+The central claim is that visualization can change the physical future when it changes
+attention, expectation, policy selection, and action. Biological state constrains
+which policies a person can reliably execute. Action changes the environment, and
+feedback updates both the person and the plan. I formalize this loop with a policy
+mixture model and prove three results within it. First, visualization requires a
+mediator: if policy and action do not change, an external outcome does not change
+under the ordinary causal graph. Second, an embodied state that enables more effective
+policies expands the set of reachable futures. Third, repeated well-directed attempts
+compound the probability of material success.
 
-Finally, I treat alchemy, kundalini, Christian theosis, and Christ consciousness as
-interpretive maps of disciplined transformation rather than substitute anatomy. The
-result is neither proof that thought creates matter nor denial of spiritual
-experience. It is a stronger claim: embodied agents construct part of lived reality by
-changing the distribution of futures that biology, attention, conduct, and environment
-make reachable. Seven falsifiable predictions, including negative tests, define where
-the theory ends.
+The theory integrates evidence from mental imagery, implementation intentions,
+placebo physiology, bioelectric signaling, sleep, circadian timing, metabolism,
+hydration, inflammation, habits, notifications, and contemplative practice. It also
+sets clear boundaries. Quantum effects occur in biology, but this does not establish
+voluntary selection of quantum timelines. DNA conducts charge, but this does not make
+ordinary language a genetic programming interface. U.S. Patent 6,506,148 and the
+Gateway memorandum are genuine primary records of proposed mechanisms and
+institutional inquiry, not conclusive experimental validation.
+
+Alchemy, kundalini, theosis, Christ consciousness, and related traditions can be read
+as symbolic maps of disciplined transformation. The practical conclusion is strong
+without requiring magical causation: imagination supplies direction, the body supplies
+capacity, action supplies physical force, and feedback turns a private vision into a
+public reality.
 \end{abstract}
 
 \newpage
 \pagenumbering{arabic}
 
 % ============================================================
-\section{Introduction: Recovering the Signal}
-\label{sec:intro}
+\section{The Claim}
 % ============================================================
 
-There is a genre of argument that begins with a familiar biological fact and ends,
-within a few sentences, with a total theory of reality. DNA is electrically active,
-therefore it is an antenna. The heart produces a magnetic field, therefore it
-broadcasts consciousness. Enzymes exhibit quantum tunneling, therefore choice selects
-a universe. Sleep loss impairs judgment, therefore insomnia has decohered a personal
-quantum field. The movement from fact to conclusion is fast enough that the missing
-premises are easy to miss.
+The phrase \emph{manifest your reality} is used for several different claims. One is
+ordinary and true: a person imagines a future, organizes behavior around it, and helps
+bring it about. Another is possible but underspecified: vivid inner experience may
+change health, perception, and performance through mechanisms not yet fully mapped. A
+third is much stronger: thought alone selects an external quantum timeline or directly
+rearranges matter. These claims should not be treated as one.
 
-These arguments should not be accepted as science. They should not be dismissed
-without diagnosis either. Their cultural power comes from fastening unsupported
-mechanisms to an experience that is difficult to deny: a rested, nourished, focused
-person inhabits a different practical world from an exhausted, inflamed, distracted
-one. Opportunities are noticed or missed. Impulses are inhibited or enacted. A plan is
-represented clearly or not at all. The external world has not become arbitrary, yet
-the set of futures the person can reliably reach may have changed.
+This paper defends the first claim, studies the second, and turns the third into a
+testable boundary. The resulting view is neither trivial nor magical. Human beings are
+not passive observers of a fixed future. They are living causes inside the world.
+What they repeatedly represent changes what they notice, prepare for, attempt, build,
+and become. Those changes alter later physical states.
 
-This paper asks whether that core intuition can be made precise. I use
-\emph{manifestation} in a deliberately bounded sense: the process by which an
-intention, acting through an embodied agent, changes the distribution of future states
-through attention, policy selection, action, environmental modification, and
-feedback. This definition is less spectacular than mental control over matter, but it
-is also more powerful than positive thinking. It specifies a causal system, identifies
-points of failure, and produces experiments.
+The simple causal chain is:
 
-Three distinctions organize the argument. First, a physical fact, a scientific model,
-a metaphor, and a spiritual interpretation are not interchangeable kinds of claim.
-Second, the electrical character of life does not by itself imply quantum computation
-or nonlocal agency. Third, \emph{reality} can refer to at least three different things:
-the world independent of a present experience, the world as perceived and valued by an
-agent, or the future world produced partly by that agent's actions. Many disagreements
-about manifestation disappear once the referent is made explicit.
+\begin{equation}
+\text{vision}
+\longrightarrow
+\text{embodied state}
+\longrightarrow
+\text{policy}
+\longrightarrow
+\text{action}
+\longrightarrow
+\text{physical change}
+\longrightarrow
+\text{feedback}.
+\label{eq:chain}
+\end{equation}
 
-The paper makes four contributions. Section~\ref{sec:ladder} introduces an epistemic
-ladder for keeping evidence and interpretation in contact without collapsing them.
-Section~\ref{sec:body} audits the scientific premises concerning DNA, cell counts,
-electromagnetic fields, bioelectricity, neural information, and quantum biology.
-Section~\ref{sec:formal} presents the formal EAH model and derives two propositions:
-the mediator requirement and biological contraction of accessible futures.
-Sections~\ref{sec:bandwidth} through~\ref{sec:symbolic} connect the model to biological
-state, goal pursuit, commercial incentive systems, and symbolic traditions.
-Sections~\ref{sec:audit} through~\ref{sec:limits} expose the theory to direct
-claim-by-claim audit, predictions, counterarguments, and ethical limits.
+Each arrow matters. Vision without embodiment becomes fantasy. Capacity without
+direction becomes unused potential. Intention without policy remains a wish. Policy
+without action remains private. Action without feedback becomes repetition without
+learning. Manifestation is the complete loop.
 
-The aim is not to domesticate every spiritual claim into neuroscience. Nor is it to
-use mystery as a license for weak inference. The aim is to say exactly what is known,
-what follows from it, what remains a meaningful interpretation, and what currently
-has no evidence.
+This is also why the body matters. A sleep-deprived, inflamed, distracted, or
+chronically stressed person does not merely feel worse. That state changes attention,
+inhibition, learning, valuation, and the reliability of action. Conversely, recovery,
+practice, environmental design, and meaning can enlarge the range of policies that
+are available at the decisive moment. Biology is not destiny, but it shapes the menu
+from which agency chooses.
 
 % ============================================================
-\section{An Epistemic Ladder: Fact, Model, Metaphor, and Myth}
-\label{sec:ladder}
+\section{What Manifestation Means}
 % ============================================================
 
-Claims about mind and body often become confused because four legitimate activities
-are compressed into one sentence. Measurement reports what an instrument or
-experiment detected. Modeling proposes a causal or mathematical organization of those
-measurements. Metaphor transfers structure from one domain to another. Myth, in the
-technical rather than pejorative sense, organizes identity, value, and ultimate
-meaning. A proposition can be valuable at one level and false at another.
+The word \emph{reality} needs a precise object. Three levels are sufficient.
 
-\begin{definition}[Evidence status]
-\label{def:evidence}
-A claim in this paper is \emph{established} when it rests on mature physical theory or
-replicated causal evidence; \emph{supported} when convergent evidence exists with
-material limitations; \emph{plausible} when it is a testable extrapolation not yet
-established; and \emph{interpretive} when it expresses phenomenological,
-philosophical, or theological meaning rather than a laboratory finding.
+\begin{definition}[Mental plane]
+The mental plane is the set of internal representations an agent can currently form:
+images, concepts, goals, counterfactuals, memories, and models of possible futures.
 \end{definition}
+
+\begin{definition}[Embodied plane]
+The embodied plane is the agent's present capacity to perceive, regulate, decide,
+learn, and act. It includes attention, expectation, emotion, physiological state,
+skill, and action readiness.
+\end{definition}
+
+\begin{definition}[Physical plane]
+The physical plane is the observable world in which actions have consequences:
+bodies, objects, documents, money, relationships, institutions, and environments.
+\end{definition}
+
+The mental plane is not unreal. A representation is a physical process in a living
+nervous system and can be causally important before its object exists. Yet a mental
+model is not identical to the world it represents. The imagined house is not a house.
+It becomes one only when the representation controls drawings, budgets, contracts,
+tools, and coordinated labor.
+
+This distinction gives a professional meaning to \emph{astral visualization}. The
+term can describe a vivid symbolic experience in which a desired reality is perceived
+as already present. Such experience may carry unusual emotional force or a sense of
+self-transcendence \citep{james1902varieties,yaden2017selftranscendent}. The paper
+does not require an astral substance. Its causal question is simpler: does the
+experience change the embodied policies that later change the world?
 
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
-  box/.style={draw=darkblue, thick, rounded corners, minimum width=10.8cm,
-              minimum height=1.0cm, align=left, text width=10.0cm},
-  arr/.style={-{Stealth[length=3mm]}, very thick, draw=medblue},
-  lab/.style={font=\bfseries, text=darkblue}
+  node distance=7mm,
+  box/.style={
+    rounded corners=2pt,
+    draw=darkblue,
+    very thick,
+    minimum height=9mm,
+    text width=2.1cm,
+    align=center,
+    fill=lightblue
+  },
+  arrow/.style={-{Latex[length=2.4mm]}, thick, darkblue}
 ]
-  \node[box, fill=lightblue!36] (fact)
-    {\textbf{Established:} measured regularities and mature mechanisms};
-  \node[box, fill=lightblue!23, above=0.28cm of fact] (support)
-    {\textbf{Supported synthesis:} causal models joining multiple findings};
-  \node[box, fill=amber!10, above=0.28cm of support] (plausible)
-    {\textbf{Plausible extension:} explicit hypotheses with refutation conditions};
-  \node[box, fill=deepgreen!10, above=0.28cm of plausible] (meaning)
-    {\textbf{Interpretive meaning:} phenomenology, metaphor, ethics, and theology};
-
-  \draw[arr] ([xshift=-5.05cm]fact.north) -- ([xshift=-5.05cm]meaning.south)
-    node[midway, left=4pt, align=right, font=\footnotesize\itshape, text=darkgray]
-    {abstraction\\increases};
-  \draw[arr] ([xshift=5.05cm]meaning.south) -- ([xshift=5.05cm]fact.north)
-    node[midway, right=4pt, align=left, font=\footnotesize\itshape, text=darkgray]
-    {empirical burden\\increases};
+\node[box] (vision) {Vision\\desired future};
+\node[box, right=of vision] (body) {Embodiment\\state and skill};
+\node[box, right=of body] (policy) {Policy\\what to do};
+\node[box, right=of policy] (world) {Physical world\\observable change};
+\draw[arrow] (vision) -- (body);
+\draw[arrow] (body) -- (policy);
+\draw[arrow] (policy) -- (world);
+\draw[arrow] (world.south) -- ++(0,-0.65) -| node[pos=0.25, below, text=darkgray]
+  {\small feedback and learning} (vision.south);
 \end{tikzpicture}
-\caption{The epistemic ladder. A higher rung is not automatically less valuable, but
-it cannot be passed off as a lower rung. An interpretation becomes a scientific
-mechanism only when operational definitions, measurements, and risky tests connect it
-to the evidence below.}
-\label{fig:ladder}
-\end{figure}
-
-Figure~\ref{fig:ladder} makes two rules visible. First, upward movement requires an
-argument. Quantum tunneling in an enzyme does not, without several new premises,
-entail quantum control of life choices. Second, downward movement requires an
-experiment. If ``frequency'' is supposed to name a causal biological variable, it must
-specify what oscillates, at what frequency, with what amplitude, where it is measured,
-and what intervention changes the outcome.
-
-The ladder also protects spiritual language from bad science. Christian theosis does
-not become more meaningful if assigned an invented glandular pathway. Kundalini
-phenomenology does not require every image in a tantric text to name a modern
-anatomical structure. Alchemical transformation can organize a practice of character
-without claiming that intention violates conservation laws. Removing a false
-mechanism does not remove the experience or the ethical demand.
-
-\begin{remark}[Unknown is not evidence]
-Failure to possess a complete theory of consciousness does not raise every proposed
-mechanism to equal probability. Evidence that conscious state covaries with complex
-brain dynamics \citep{casali2013consciousness} and that cortical stimulation can alter
-experienced intention \citep{desmurget2009intention} supports strong brain dependence.
-It does not settle the metaphysics of mind, but the remaining metaphysical question is
-not positive evidence for any particular quantum or extracorporeal theory.
-\end{remark}
-
-% ============================================================
-\section{The Body Is Bioelectric, but Not Thereby a Quantum Computer}
-\label{sec:body}
-% ============================================================
-
-\subsection{DNA: information, material, and regulation}
-
-DNA is both an information-bearing polymer and a physical molecule. The central dogma
-describes directional transfer of sequence information among nucleic acid and protein
-systems \citep{crick1970central}; it does not say that a genome mechanically determines
-every future trait. Development depends on gene regulation, cellular context,
-environmental exposure, stochasticity, and gene--environment interaction
-\citep{virolainen2023geneenvironment}. ``DNA is code'' and ``DNA is not destiny'' are
-therefore compatible statements.
-
-The molecule also has physical properties that the code metaphor does not exhaust.
-Charge can move through stacked DNA bases under particular conditions, a property
-used experimentally for electrochemical sensing \citep{zwang2018dnacharge}. This is
-interesting molecular physics. It is not evidence that ordinary words carry a
-sequence-independent semantic command that DNA receives and executes.
-
-The modern ``linguistic-wave genetics'' claim can be traced to papers asserting that
-speech-like or electromagnetic patterns act on a holographic genome
-\citep{gariaev2011wavegenetics}. The venue is outside the mainstream molecular
-genetics literature, and a later paper in the same journal states that the reported
-DNA phantom effect had not, to the author's knowledge, been successfully replicated
-\citep{brill2012phantom}. A disappearing story is not made stronger by being
-difficult to find. The scientific burden remains independent replication under
-blinding, calibrated instrumentation, prespecified analysis, and accessible raw data.
-
-\subsection{Numbers that sound more exact than the science}
-
-A widely repeated estimate assigns the human body roughly 37 trillion cells. A newer
-systematic analysis estimates approximately 36 trillion cells in a reference adult
-male, 28 trillion in a reference adult female, and 17 trillion in a reference
-ten-year-old child, with body size and counting assumptions materially affecting the
-answer \citep{hatton2023cellcount}. The useful conclusion is scale, not a universal
-personal serial number.
-
-The statement that neurons ``fire at 70 millivolts'' likewise mixes quantities.
-Approximately $-70$ millivolts commonly describes a resting membrane potential, while
-an action potential is a transient voltage trajectory whose size and shape vary by
-cell type \citep{kandel2021principles}. Life is electrochemical: concentration
-gradients, ion channels, membrane capacitance, neurotransmitters, and metabolism form
-one coupled system. ``Not chemistry'' is therefore a false contrast.
-
-Nor is there a settled global figure of 400 billion bits per second for a human.
-Information rate depends on the chosen channel, alphabet, time scale, and decoder.
-One recent analysis estimated roughly 10 bits per second for selected behavioral
-outputs \citep{zheng2025bits}; a published response argued that this severely
-understates motor processing and conflates levels of analysis
-\citep{sauerbrei2025bits}. Neither supports a unitary 400-billion-bit meter for
-consciousness.
-
-\subsection{The cardiac field}
-
-The heart's electrical currents generate a magnetic field, and magnetocardiography
-measures it. The relevant signals are commonly on the picotesla scale and require
-sensitive instruments plus noise control \citep{roth2024magnetocardiogram}. A magnetic
-field does not end at a crisp anatomical radius, so detection distance depends on the
-sensor, geometry, shielding, and background. The popular three-foot figure does not
-identify a privileged biological boundary. Measurement of a cardiac field also does
-not by itself demonstrate that the field carries thoughts, coordinates another
-person's physiology, or constitutes consciousness. Each would require an independent
-encoding, transmission, and decoding experiment.
-
-\subsection{Bioelectric pattern control is real}
-
-The strongest scientific version of the ``body as an electrical system'' thesis lies
-not in a distant aura but at cell membranes. Membrane potentials and gap-junction
-networks regulate cell proliferation, migration, gene expression, anatomical
-patterning, regeneration, and cancer-relevant behavior
-\citep{levin2021bioelectric}. In planaria, early bioelectric perturbations can change
-the polarity of regenerated anatomy, including persistent pattern outcomes after a
-transient intervention \citep{durant2019planarian}. These results expand the causal
-vocabulary of biology beyond genes alone.
-
-They do not make electrical state omnipotent. Bioelectric signals work through
-specific cells, channels, transcriptional responses, tissue geometries, and
-developmental constraints. Their very scientific power comes from those mechanisms.
-Calling the organism a ``bioelectric computer'' can be a productive systems metaphor
-if the states, transitions, memory, and readout are specified. Adding ``quantum'' does
-not strengthen the claim unless a quantum computational resource is also identified.
-
-\subsection{Quantum biology and the scale problem}
-
-All chemistry is quantum mechanical at its foundation. Hydrogen tunneling contributes
-to specified enzyme reactions \citep{cha1989tunneling}. Spectroscopic work reported
-coherence in photosynthetic complexes at physiological temperature
-\citep{panitchayangkoon2010coherence}, while later work found no long-lived electronic
-coherence required for the energy-transfer function \citep{duan2017nolongcoherence}.
-This is what a living research program looks like: the relevant state, duration, and
-function are measured and disputed.
-
-An inference from molecular quantum events to conscious branch selection faces a
-scale problem. It must show that the relevant states remain coherent long enough,
-couple to neural computation, survive thermal and environmental noise, influence
-behavior, and can be controlled by intention. Estimates for proposed neural
-superpositions have often yielded decoherence times many orders of magnitude shorter
-than neural dynamics \citep{tegmark2000decoherence}. Quantum-consciousness models such
-as orchestrated objective reduction remain proposals rather than established neural
-mechanisms \citep{hameroff2014orch}.
-
-The many-worlds interpretation is an interpretation of quantum mechanics, not an
-experimental finding that a person can choose a branch by choosing tea rather than
-coffee \citep{vaidman2022manyworlds}. Ordinary decision theory already supplies a
-sufficient statement: different actions change conditional future probabilities.
-Invoking literal world splitting adds no predictive leverage unless it yields a result
-that the ordinary model cannot.
-
-\subsection{What patents and declassified records establish}
-
-Two primary documents often presented as decisive evidence deserve direct treatment.
-U.S. Patent 6,506,148 B2 claims methods for pulsing monitor images between 0.1 and
-15 Hz so that emitted electromagnetic fields interact with a subject's nervous system
-\citep{loos2003patent}. Its specification describes observations in a subject,
-frequency tuning by that subject, and eyelid ptosis graded by the subject as a response.
-It does not report a randomized, blinded, independently replicated multi-participant
-trial.
-
-A patent is meaningful documentary evidence. It fixes priority, discloses a proposed
-method, and shows that claims survived a legal examination. The U.S. utility standard
-asks whether an asserted use is specific, substantial, and credible to a person of
-ordinary skill \citep{uspto2026utility}. That standard is not a clinical effect-size
-estimate, a regulatory safety finding, or peer review. The patent therefore raises a
-testable low-frequency field hypothesis; the grant alone does not establish the
-hypothesis as a population-level fact.
-
-Screens can certainly affect brains through ordinary sensory pathways. Neural
-recordings in macaques and human visual evoked potentials phase-locked to CRT refresh,
-especially for high-contrast stimuli, while the perceptual consequence remained
-uncertain \citep{williams2004displays}. This measured visual entrainment should not be
-silently exchanged for the patent's distinct claim that weak monitor emissions excite
-a cutaneous sensory resonance. That claim requires its own blinded exposure study with
-field dosimetry, sham conditions, objective endpoints, and modern display types.
-
-The second document is a June 1983 U.S. Army memorandum, \emph{Analysis and Assessment
-of Gateway Process}, later released under a CIA archive number
-\citep{mcdonnell1983gateway}. The memorandum analyzes the Monroe Institute's Hemi-Sync
-program using hypnosis, biofeedback, meditation, Bentov's models, holography, and
-speculative quantum language. It is evidence that Army personnel studied the program
-and considered possible applications. It is not a CIA experimental report, and
-declassification is a records-status decision rather than scientific endorsement.
-The memorandum's conclusion proposes a sequence of future experiments and closes
-conditionally on those experiments being carried out. Its own form is therefore an
-assessment and research proposal, not a report of validated time-space transcendence.
-
-Institutional attention is still evidence, but of a different proposition. It shows
-that an institution found a possibility worth analyzing under its mission and
-uncertainty. It cannot substitute for methods, controls, data, replication, and a
-peer-reviewed inferential chain.
-
-\begin{remark}[Two meanings of coherence]
-Quantum coherence is a property of phase relations in a specified quantum state.
-Psychophysiological coherence is often used more loosely for coordinated function,
-stable attention, or regulated arousal. The second can be operationalized and useful,
-but it should not borrow the physical authority of the first. In the rest of this
-paper, \emph{coordination} names the ordinary biological concept.
-\end{remark}
-
-% ============================================================
-\section{The Embodied Agency Hypothesis}
-\label{sec:formal}
-% ============================================================
-
-The scientific content recovered so far is substantial but incomplete. Bioelectric
-state helps regulate living form; physiological state affects cognition; intention
-can alter physiology and action. What joins these observations to the construction of
-reality? The answer depends on which reality is meant.
-
-\begin{definition}[Three realities]
-\label{def:realities}
-\emph{Ontic reality} is the world that exists independently of an agent's present
-experience. \emph{Lived reality} is the subset of the world perceived, modeled, valued,
-and experienced by that agent. An \emph{enacted future} is a later world state whose
-probability has been changed by the agent's actions.
-\end{definition}
-
-The distinction is not a retreat into semantics. A belief can radically change lived
-reality while being false about ontic reality. A repeated action can alter an enacted
-future without thought directly controlling matter. Conversely, an event can be real
-while remaining outside the agent's attention and therefore outside the practical
-world on which that agent acts.
-
-\subsection{Executable policies and accessible futures}
-
-Let $B_t$ denote the agent's biological state at time $t$, including relevant neural,
-metabolic, inflammatory, autonomic, and circadian variables. Let $E_t$ denote the
-environmental state, $I_t$ an intention, and $\pi$ a policy, meaning a conditional
-strategy for action across a time horizon. A policy the agent can imagine but cannot
-execute is not practically equivalent to one that can be performed reliably.
-
-\begin{definition}[Executable policy set]
-\label{def:policies}
-For reliability threshold $\rho\in(0,1]$, define
-\begin{equation}
-\label{eq:policies}
-\Pset_{\rho}(B_t,E_t)
-=
-\left\{
-\pi:
-P\!\left(\text{execute }\pi\mid B_t,E_t\right)\ge \rho
-\right\}.
-\end{equation}
-The set includes only policies the agent can both represent and execute above the
-chosen threshold.
-\end{definition}
-
-\begin{definition}[Accessible future set]
-\label{def:accessible}
-For outcome threshold $\epsilon\in(0,1]$, the accessible future set is
-\begin{equation}
-\label{eq:accessible}
-\Aset_{\epsilon,\rho}(B_t,E_t)
-=
-\left\{
-y:
-\exists\pi\in\Pset_{\rho}(B_t,E_t)
-\text{ such that }
-P(y\mid\doop(\pi),B_t,E_t)\ge\epsilon
-\right\}.
-\end{equation}
-\end{definition}
-
-This set is not the set of imaginable worlds. It is the set of outcomes reachable
-with nontrivial probability through at least one executable policy, given present
-biology and environment. A future may be possible in principle and inaccessible in
-practice. The gap between the two is where health, skill, tools, institutions, and
-social support matter.
-
-Intention changes the distribution of futures by changing policy weights:
-\begin{equation}
-\label{eq:agency}
-P(Y\mid I_t,B_t,E_t)
-=
-\sum_{\pi\in\Pset_{\rho}(B_t,E_t)}
-P(Y\mid\doop(\pi),B_t,E_t)\,
-P(\pi\mid I_t,B_t,E_t).
-\end{equation}
-Equation~\eqref{eq:agency} is the \emph{Embodied Agency Operator}, denoted
-$\Eop[I_t;B_t,E_t]$. Intention changes the weights. Biology and environment constrain
-the support. Action carries the causal effect into the world.
-
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[
-  node distance=1.25cm and 1.0cm,
-  stage/.style={draw=darkblue, very thick, rounded corners, fill=lightblue!28,
-                minimum width=2.25cm, minimum height=0.95cm, align=center,
-                font=\small\bfseries},
-  state/.style={draw=deepgreen, thick, rounded corners, fill=deepgreen!8,
-                minimum width=2.25cm, minimum height=0.8cm, align=center,
-                font=\small},
-  arr/.style={-{Stealth[length=2.7mm]}, very thick, draw=medblue},
-  mod/.style={-{Stealth[length=2.4mm]}, thick, dashed, draw=deepgreen}
-]
-  \node[stage] (intent) {Intention};
-  \node[stage, right=of intent] (attention) {Attention and\\prediction};
-  \node[stage, right=of attention] (policy) {Policy\\selection};
-  \node[stage, right=of policy] (action) {Action};
-  \node[stage, below=1.45cm of action] (world) {Environment};
-  \node[stage, left=of world] (feedback) {Feedback};
-  \node[state, below=1.45cm of attention] (biology) {Biological state\\$B_t$};
-
-  \draw[arr] (intent) -- (attention);
-  \draw[arr] (attention) -- (policy);
-  \draw[arr] (policy) -- (action);
-  \draw[arr] (action) -- (world);
-  \draw[arr] (world) -- (feedback);
-  \draw[arr] (feedback) -- (biology);
-  \draw[arr] (biology) -- (intent);
-
-  \draw[mod] (biology) -- (attention);
-  \draw[mod] (biology) -- (policy);
-  \draw[mod] (biology) -- (action);
-\end{tikzpicture}
-\caption{The embodied-agency loop. Biological state does not merely sit upstream of a
-single choice. It modulates what is noticed, what can be represented, which policy is
-selected, and how faithfully action is executed. Environmental feedback then changes
-the next biological and cognitive state.}
+\caption{The passage from a private representation to a public result. Vision sets
+direction; embodiment determines capacity; policy organizes action; physical change
+returns evidence.}
 \label{fig:loop}
 \end{figure}
 
-\subsection{The mediator requirement}
+Manifestation, in the sense defended here, is therefore:
 
-The model makes a sharp commitment about external effects. Consider a causal graph in
-which intention $I$ affects internal mediators $M$ such as expectation and attention;
-$M$ affects policy $\pi$; and $\pi$ affects external outcome $Y$ through action. Biology
-$B$ and environment $E$ condition each stage. Suppose there is no additional direct
-edge from $I$ to $Y$.
+\begin{quote}
+\emph{the process by which a represented future changes the policies of an embodied
+agent, whose actions increase the probability that the represented future becomes an
+observable state of the world.}
+\end{quote}
 
-\begin{proposition}[Mediator requirement]
-\label{prop:mediator}
-Under the causal structure above, fixing the policy and all downstream environmental
-actions blocks the effect of intention on an external outcome:
+This definition preserves the power of the idea while making it measurable. It also
+prevents two errors. The first is fatalism: the future is not fixed because present
+action changes its distribution. The second is omnipotence: the agent acts inside
+material, social, and probabilistic constraints.
+
+% ============================================================
+\section{A Formal Model}
+% ============================================================
+
+Let \(V\) denote a visualized target, \(B\) the agent's biological and cognitive
+state, \(E\) the environment, \(\pi\) a policy or organized course of action, and
+\(Y\) a later physical outcome. The basic identity is:
+
 \begin{equation}
-\label{eq:mediator}
-P\!\left(Y\mid\doop(I=i_1),\doop(\pi=\bar{\pi}),B,E\right)
+P(Y\mid V,B,E)
 =
-P\!\left(Y\mid\doop(I=i_2),\doop(\pi=\bar{\pi}),B,E\right)
+\sum_{\pi\in\Pset(B,E)}
+P\!\left(Y\mid\doop(\pi),B,E\right)
+P(\pi\mid V,B,E).
+\label{eq:operator}
 \end{equation}
-for any intentions $i_1,i_2$ and fixed policy $\bar{\pi}$.
-\end{proposition}
+
+The first term inside the sum asks what happens if policy \(\pi\) is executed. The
+second asks how likely the agent is to select that policy given the vision, body, and
+environment. Visualization has power when it changes the weights assigned to useful
+policies. Biology and environment determine which policies are available and whether
+they can be executed reliably.
+
+\subsection{The mediation theorem}
+
+\begin{theorem}[Mediation theorem]
+Assume the ordinary causal graph
+\[
+V \longrightarrow \pi \longrightarrow Y,
+\]
+with \(B\) and \(E\) fixed. If
+\[
+P(\pi\mid V=v_1,B,E)=P(\pi\mid V=v_2,B,E)
+\]
+for every policy \(\pi\), then
+\[
+P(Y\mid V=v_1,B,E)=P(Y\mid V=v_2,B,E).
+\]
+\end{theorem}
 
 \begin{proof}
-Intervention on $\pi$ removes the structural equation by which upstream intention and
-its internal mediators select the policy. By assumption, every directed path from $I$
-to external $Y$ passes through $\pi$ or a downstream action fixed by the intervention.
-The truncated factorization therefore contains no remaining factor through which $I$
-changes $Y$, yielding Equation~\eqref{eq:mediator}.
+Apply Equation~\ref{eq:operator} to \(v_1\) and \(v_2\). The interventional outcome
+term \(P(Y\mid\doop(\pi),B,E)\) is the same in both sums because the policy, body, and
+environment are fixed. By assumption, the policy weight is also the same for every
+\(\pi\). The sums are therefore equal.
 \end{proof}
 
-This proposition is a boundary, not a dogma. A reproducible residual effect of
-intention on a properly isolated external random process would falsify the assumed
-graph and require a new mechanism. The present literature does not justify building
-that direct edge into the default model. The burden belongs to experiments that
-separate intention from expectancy effects, subtle action, sensory leakage,
-selection, optional stopping, and publication bias.
+The theorem says something practical and something scientific. Practically, an image
+that never changes attention, preparation, choice, or action should not be expected to
+change an external result. Scientifically, any reproducible effect on a shielded
+external system after every ordinary mediator is fixed would falsify this graph and
+require a new causal edge. The theorem does not declare such an edge impossible. It
+states what evidence would be needed.
 
-\subsection{Biological contraction}
+\subsection{The reachable-future theorem}
 
-Biology can affect future access even when it does not change the physical possibility
-of an outcome. Figure~\ref{fig:futures} illustrates the difference between the full
-future space and the part accessible above behavioral thresholds.
+For reliability threshold \(\rho\), let \(\Pset_\rho(B,E)\) be the set of policies the
+agent can execute with at least reliability \(\rho\). For outcome threshold
+\(\epsilon\), define the reachable-future set:
 
-\begin{proposition}[Contraction of accessible futures]
-\label{prop:contraction}
-Let $B^{-}$ and $B^{+}$ be two biological states in the same environment. If
 \begin{equation}
-\Pset_{\rho}(B^{-},E)\subseteq\Pset_{\rho}(B^{+},E)
+\Aset_{\epsilon,\rho}(B,E)
+=
+\left\{
+y:
+\exists \pi\in\Pset_\rho(B,E)
+\text{ with }
+P\!\left(y\mid\doop(\pi),B,E\right)\ge\epsilon
+\right\}.
+\label{eq:reachable}
 \end{equation}
-and the outcome distribution for each shared intervention $\doop(\pi)$ is unchanged,
-then
-\begin{equation}
-\Aset_{\epsilon,\rho}(B^{-},E)
+
+\begin{theorem}[Reachable-future theorem]
+Let \(B^+\) and \(B^-\) be two embodied states in the same environment. If
+\[
+\Pset_\rho(B^-,E)\subseteq\Pset_\rho(B^+,E),
+\]
+and every outcome reachable under \(B^-\) remains at least as likely under the same
+policy in \(B^+\), then
+\[
+\Aset_{\epsilon,\rho}(B^-,E)
 \subseteq
-\Aset_{\epsilon,\rho}(B^{+},E).
-\end{equation}
-\end{proposition}
+\Aset_{\epsilon,\rho}(B^+,E).
+\]
+If at least one additional policy in \(B^+\) reaches an outcome not reachable in
+\(B^-\), the inclusion is strict.
+\end{theorem}
 
 \begin{proof}
-Take any $y\in\Aset_{\epsilon,\rho}(B^{-},E)$. By
-Definition~\ref{def:accessible}, there exists
-$\pi\in\Pset_{\rho}(B^{-},E)$ for which
-$P(y\mid\doop(\pi),B^{-},E)\ge\epsilon$. The policy-set inclusion places $\pi$ in
-$\Pset_{\rho}(B^{+},E)$, and the shared intervention has the same outcome
-distribution by assumption. Therefore $y\in\Aset_{\epsilon,\rho}(B^{+},E)$.
+Take any \(y\in\Aset_{\epsilon,\rho}(B^-,E)\). By definition, some
+\(\pi\in\Pset_\rho(B^-,E)\) reaches \(y\) with probability at least \(\epsilon\).
+Set inclusion makes the same policy available in \(B^+\), and the probability
+assumption preserves the threshold. Thus \(y\in\Aset_{\epsilon,\rho}(B^+,E)\).
+If an additional policy reaches a new qualifying outcome, that outcome belongs only
+to the second set.
 \end{proof}
+
+The result formalizes a familiar experience. When exhaustion removes the policy
+\emph{have the difficult conversation calmly}, a relational future disappears from
+the reachable set for that moment. When training adds the policy \emph{build and
+deploy the prototype}, futures that were once imaginary become reachable. Improved
+state does not guarantee an outcome. It changes the set of outcomes for which there
+is a credible path.
+
+\subsection{The repetition theorem}
+
+\begin{theorem}[Repetition theorem]
+Suppose an agent makes \(n\) conditionally independent attempts at a target, with
+success probabilities \(p_1,\ldots,p_n\). The probability of at least one success is
+\[
+P(\text{success by }n)
+=
+1-\prod_{t=1}^{n}(1-p_t).
+\]
+For any attempt with \(0<p_t<1\), adding another attempt with positive probability or
+increasing any \(p_t\) strictly increases the cumulative probability.
+\end{theorem}
+
+\begin{proof}
+The probability that every attempt fails is the product
+\(\prod_{t=1}^{n}(1-p_t)\). The complementary event is at least one success. Adding a
+factor \(1-p_{n+1}<1\) makes the failure product smaller. Increasing a \(p_t\) also
+makes its failure factor smaller. In either case the complement becomes larger.
+\end{proof}
+
+Real attempts are not perfectly independent, but the logic survives in richer
+models. A clear vision can increase the number of directed attempts, improve their
+quality, and make feedback useful. Small changes then accumulate. What looks
+retrospectively like a sudden manifestation is often the visible threshold of a long
+sequence.
 
 \begin{figure}[t]
 \centering
-\begin{tikzpicture}[font=\small]
-  \draw[very thick, darkgray, fill=darkgray!4] (0,0) ellipse (3.7 and 2.0);
-  \node[text=darkgray] at (0,1.64) {physically possible future space};
-
-  \draw[very thick, medblue, fill=lightblue!32] (-0.55,-0.12) ellipse (2.35 and 1.17);
-  \node[text=darkblue] at (-0.55,0.48)
-    {$\Aset_{\epsilon,\rho}(B^{+},E)$};
-  \node[text=darkblue] at (-0.55,0.17) {regulated state};
-
-  \draw[very thick, amber, fill=amber!12] (-0.95,-0.53) ellipse (1.15 and 0.47);
-  \node[text=amber!70!black, font=\scriptsize] at (-0.95,-0.43)
-    {$\Aset_{\epsilon,\rho}(B^{-},E)$};
-  \node[text=amber!70!black, font=\scriptsize] at (-0.95,-0.67)
-    {impaired state};
-
-  \fill[deepgreen] (2.05,-0.78) circle (2.5pt);
-  \node[align=left, anchor=west, text=deepgreen!80!black] at (2.2,-0.78)
-    {possible but\\not presently reachable};
+\begin{tikzpicture}[
+  plane/.style={
+    rounded corners=3pt,
+    very thick,
+    minimum width=11.6cm,
+    minimum height=1.35cm,
+    align=center
+  },
+  arrow/.style={-{Latex[length=2.6mm]}, thick, darkblue}
+]
+\node[plane, draw=darkblue, fill=lightblue] (mental)
+  {\textbf{Mental plane}\\target image, meaning, prediction, identity};
+\node[plane, draw=darkblue, fill=palegreen, below=7mm of mental] (embodied)
+  {\textbf{Embodied plane}\\attention, expectation, physiology, skill, policy};
+\node[plane, draw=darkblue, fill=paleyellow, below=7mm of embodied] (physical)
+  {\textbf{Physical plane}\\action, artifact, relationship, institution, world state};
+\draw[arrow] (mental) -- node[right, text=darkgray]{\small selection and preparation} (embodied);
+\draw[arrow] (embodied) -- node[right, text=darkgray]{\small action} (physical);
+\draw[arrow] (physical.west) -- ++(-0.65,0) |- node[pos=0.22, left, text=darkgray]
+  {\small feedback} (mental.west);
 \end{tikzpicture}
-\caption{Accessible futures need not equal physically possible futures. An impaired
-state may contract the policy set, while restoration, skill, tools, or support can
-expand it. The nested geometry is a hypothesis to be tested for defined tasks, not a
-claim that all healthy states dominate all impaired states.}
-\label{fig:futures}
+\caption{The three planes are not competing universes. They are stages in one causal
+process. A private model becomes physically consequential through an embodied agent.}
+\label{fig:planes}
 \end{figure}
 
-The proposition uses deliberately strong assumptions to expose the logic. In actual
-life, biological state can change not only whether a policy is executable but also the
-outcome distribution conditional on action. Fatigue may make a negotiation policy
-less likely to be selected and less effective once attempted. Conversely, states
-labeled atypical or impaired can expand performance in a particular niche. The
-empirical question is task-specific set geometry, not a moral ranking of bodies.
-
-\begin{definition}[Ordinary biological coordination]
-\label{def:coordination}
-For a specified task and time scale, biological coordination is the joint adequacy of
-state regulation, attentional stability, feedback sensitivity, and execution
-fidelity. It is measured by those components and their behavioral consequences, not
-by an assumed human quantum field.
-\end{definition}
-
 % ============================================================
-\section{Biological Bandwidth}
-\label{sec:bandwidth}
+\section{How Vision Enters the Body}
 % ============================================================
 
-The phrase \emph{biological bandwidth} names the resources available for representing,
-selecting, and executing policies. It is not a literal universal bitrate. The evidence
-below supports local, task-dependent effects, not a single wellness variable that
-explains every decision.
+The formal model leaves an empirical question: how can a representation change policy
+weights? Four mechanisms are well supported.
 
-\subsection{Sleep and circadian alignment}
+\paragraph{Attention.}
+A goal changes the relevance map through which the world is sampled. Once a target is
+represented clearly, cues related to it become easier to notice, encode, and retrieve.
+This is not the universe sending signs. It is selective perception serving an active
+model. Because no person can process every available signal, relevance is a genuine
+causal resource.
 
-Sleep deprivation does more than produce subjective tiredness. In a controlled study,
-total sleep deprivation impaired decisions that required participants to update from
-changing feedback \citep{whitney2015sleep}. This maps directly onto the loop in
-Figure~\ref{fig:loop}: feedback arrives, but policy selection fails to adapt. In a
-randomized crossover protocol, daily circadian misalignment impaired human cognitive
-performance in a task-dependent manner \citep{chellappa2018circadian}. The
-task-dependence matters. Poor sleep need not lower every score to alter a consequential
+\paragraph{Rehearsal.}
+Mental imagery recruits parts of the systems used in perception and action. In one
+study, kinesthetic imagery training changed brain signals and increased strength
+\citep{yao2013imagery}. The careful inference is not that imagination replaces
+practice. It is that simulation can prepare the controller that practice uses.
+Effective visualization therefore includes process, obstacles, and response, not only
+the pleasure of completion.
+
+\paragraph{Expectation.}
+Expectations can alter internal physiology. Placebo research has connected expectation
+to dopamine release in Parkinson's disease and to measurable changes in pain-related
+brain activity \citep{delafuente2001placebo,wager2004placebo}. These results do not
+show that belief can cure any disease. They do show that meaning is not outside
+biology. A representation can become a physiological input.
+
+\paragraph{Implementation.}
+A goal becomes much more executable when translated into an if-then rule: \emph{if
+situation \(X\) occurs, I will perform action \(A\)}. Implementation-intention
+research shows why desire alone is weaker than a prepared policy
+\citep{sheeran2005implementation}. Visualization supplies direction; implementation
+intentions supply grammar.
+
+The same logic applies to identity. Repeatedly imagining oneself as a builder, athlete,
+parent, leader, or contemplative can influence which actions feel consistent with the
+self-model. That effect can be constructive or delusional. The difference is
+feedback. A useful identity produces observable evidence and updates when reality
+disagrees.
+
+% ============================================================
+\section{The Body Changes What Is Possible}
+% ============================================================
+
+The human body is not merely a vehicle carrying an independent mind. It is part of the
+decision system. Neurons signal electrically; cells maintain membrane potentials;
+tissues coordinate through chemical, mechanical, and bioelectric channels. Work on
+development and regeneration shows that bioelectric patterns participate in large-scale
+anatomical organization \citep{levin2021bioelectric,durant2019planarian}. This is
+strong evidence for biological information processing. It is not, by itself, evidence
+that the body receives semantic commands from a cosmic field.
+
+Several ordinary state variables change the reachable policy set.
+
+\paragraph{Sleep and timing.}
+Sleep deprivation impairs decisions that require updating from feedback
+\citep{whitney2015sleep}. Circadian misalignment impairs performance in
+task-dependent ways \citep{chellappa2018circadian}. A person may still hold the same
+dream while losing the ability to learn from the day's evidence. Rest is therefore not
+separate from manifestation. It protects the update step.
+
+\paragraph{Energy, hydration, and inflammation.}
+Metabolic state can alter decisions under risk \citep{symmonds2010metabolic}. Mild
+dehydration has been associated with changes in cognition and mood
+\citep{ganio2011dehydration,armstrong2012dehydration}. Experimental immune activation
+can change neurobehavioral function \citep{grigoleit2011endotoxin}. These findings do
+not mean every bad choice is caused by a biomarker. They show why state cannot be
+excluded from a theory of agency.
+
+\paragraph{Food and the gut-brain axis.}
+In a randomized inpatient trial, ultra-processed diets caused higher calorie intake
+and weight gain than minimally processed diets offered under matched conditions
+\citep{hall2019ultraprocessed}. Microbiome interventions can affect reported emotional
+and neural measures, although results remain intervention-specific
+\citep{bagga2018probiotics}. Nutrition influences capacity through ordinary metabolic,
+endocrine, immune, and neural pathways. No quantum-field explanation is required.
+
+\paragraph{Attention environments.}
+Phone notifications impose measurable attentional costs even when the user does not
+respond \citep{stothart2015notifications,upshaw2022notifications}. Habits are strongly
+coupled to stable contexts, and context change can disrupt them \citep{wood2005habits}.
+Recommendation systems are explicitly optimized to select what a user sees next
+\citep{covington2016youtube}. Processed food and digital distraction do not prove a
+single conspiracy to suppress divinity. They do reveal incentive systems that profit
+when short-term consumption wins against long-term intention.
+
+This is the grounded meaning of \emph{frequency} and \emph{coherence}. Frequency can
+refer literally to oscillation only when a rate is measured. In personal practice it
+is better used as a metaphor for a stable pattern of attention, emotion, physiology,
+and conduct. Coherence is alignment among goal, state, policy, and action. When those
+parts conflict, energy is spent without directed change. When they align, the same
+person becomes a more reliable cause.
+
+% ============================================================
+\section{Evidence and Boundaries}
+% ============================================================
+
+The paper uses four evidence levels. \emph{Established} means replicated causal
+evidence or mature physical theory. \emph{Supported} means convergent evidence with
+meaningful limits. \emph{Plausible} means a testable extension. \emph{Interpretive}
+means philosophical, phenomenological, or theological meaning rather than a laboratory
+result. Keeping these levels separate makes the synthesis stronger.
+
+\subsection{DNA, fields, and quantum language}
+
+DNA is genetic material, a regulated polymer, and a medium through which charge
+transport can occur \citep{crick1970central,virolainen2023geneenvironment,
+zwang2018dnacharge}. Calling it either a code \emph{or} an antenna creates a false
+choice. It has several physical and informational properties. The specific claim that
+ordinary words semantically program DNA has not been established by blinded,
+independent, multilaboratory replication. Even literature sympathetic to a DNA
+``phantom effect'' notes the replication problem
+\citep{gariaev2011wavegenetics,brill2012phantom}.
+
+The heart produces electrical and magnetic signals. Magnetocardiography measures
+fields in the picotesla range \citep{roth2024magnetocardiogram}. Measurement does not
+create a privileged three-foot boundary or demonstrate that the field broadcasts
+intentions into external reality. Similarly, action potentials involve voltage
+changes, but quoting one membrane voltage does not make the body a computer with a
+single global bit rate. Published estimates depend on what level is counted, and
+recent authors have disputed a proposed ten-bit-per-second behavioral figure
+\citep{kandel2021principles,zheng2025bits,sauerbrei2025bits}.
+
+Quantum tunneling occurs in enzyme reactions, and quantum coherence has been studied
+in photosynthetic systems \citep{cha1989tunneling,panitchayangkoon2010coherence}.
+There is active disagreement about which forms of coherence biology actually uses
+\citep{duan2017nolongcoherence}. Quantum-consciousness proposals exist
+\citep{hameroff2014orch}, while decoherence calculations show the scale problem faced
+by simple macroscopic accounts \citep{tegmark2000decoherence}. The many-worlds
+interpretation is an interpretation of quantum mechanics, not a demonstrated method
+for a person to choose a preferred branch \citep{vaidman2022manyworlds}.
+
+\subsection{What the patent and Gateway record show}
+
+U.S. Patent 6,506,148 B2, \emph{Nervous System Manipulation by Electromagnetic Fields
+from Monitors}, describes a proposed method using pulsed monitor fields in the
+0.1 to 15 Hz range \citep{loos2003patent}. Its specification relies substantially on
+subject-controlled tuning and subjective responses. A patent grant establishes that
+claims passed the applicable legal examination. The USPTO utility requirement is not
+a blinded clinical-efficacy standard \citep{uspto2026utility}. Separate neuroscience
+does show that visual systems can entrain to video displays under defined conditions
+\citep{williams2004displays}. That supports a narrower mechanism, not every claim in
+the patent.
+
+The 1983 Department of the Army memorandum \emph{Analysis and Assessment of Gateway
+Process}, later released under a CIA archive identifier, is a genuine government
+analysis of the Monroe Institute's Gateway framework \citep{mcdonnell1983gateway}.
+It combines altered-state practice with Bentov, holographic, and quantum language.
+Its conclusion recommends further experiments and describes what might follow
+\emph{if} the method works. The document is good evidence that the subject received
+serious institutional attention. Its own conditional language prevents it from being
+treated as a final report of successful validation.
+
+The patent and memorandum are therefore valuable primary records. They show that
+claims about fields and altered consciousness entered formal technical channels.
+They do not replace controlled replication. The exact documents used here are
+archived with the paper so their wording and provenance remain auditable.
+
+\subsection{Compact claim audit}
+
+\begin{table}[p]
+\centering
+\small
+\caption{What the evidence supports and where it stops.}
+\label{tab:audit}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.23\textwidth}
+  >{\raggedright\arraybackslash}p{0.16\textwidth}
+  >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Claim} & \textbf{Status} & \textbf{Defensible conclusion} \\
+\midrule
+Cells use bioelectric signals & Established &
+Membrane voltage and bioelectric patterning participate in neural, developmental, and
+regenerative processes. \\
+\addlinespace
+Imagery changes performance & Supported &
+Imagery can rehearse controllers and influence later performance; it does not replace
+physical execution. \\
+\addlinespace
+If-then plans improve action & Supported &
+Implementation intentions convert goals into context-triggered policies. \\
+\addlinespace
+Words directly program DNA & Unsupported &
+DNA responds to physical and biochemical conditions; semantic word effects lack
+independent replication. \\
+\addlinespace
+The heart emits a field & Established &
+The field is measurable; a special consciousness radius or intention broadcast is not
+established. \\
+\addlinespace
+Quantum effects occur in cells & Established &
+Specific molecular effects exist; quantum timeline selection by intention does not
+follow. \\
+\addlinespace
+The patent proves manipulation & Documentary &
+It proves a method was claimed and granted, not that clinical efficacy was replicated. \\
+\addlinespace
+Gateway proves astral travel & Documentary &
+It proves institutional analysis and proposed testing, not conclusive validation. \\
+\addlinespace
+Kundalini describes real experience & Interpretive &
+The tradition and reported experiences are real objects of study; one universal
+physiology is not established. \\
+\addlinespace
+Sacred secretion is monthly anatomy & Unsupported &
+Known cerebrospinal-fluid and pineal physiology do not establish the claimed cycle. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ============================================================
+\section{Ancient Maps of Transformation}
+% ============================================================
+
+Long before causal graphs, traditions described transformation with symbolic
+architectures. They need not be discarded because some modern anatomical claims are
+weak. They can be read at the level where they are strongest.
+
+\paragraph{Alchemy.}
+Hermetic and alchemical texts join an image of perfected matter with disciplined
+operations of separation, purification, and recombination
+\citep{copenhaver1992hermetica,jung1968alchemy}. Psychologically, the pattern is clear:
+hold a form, expose the present self to a process, and embody the result. The gold is
+both a material aim and a symbol of integrated being.
+
+\paragraph{Kundalini.}
+Kundalini traditions provide maps of concentrated practice, ascending energy, and
+transformed consciousness \citep{buhnemann2011kundalini,white1996alchemicalbody}.
+Contemporary reports describe powerful experiences and lasting effects, although the
+data are largely phenomenological \citep{woollacott2021kundalini}. The disciplined
+claim is that practices can reorganize experience and identity. The stronger claim of
+one universal hidden anatomy remains open.
+
+\paragraph{Theosis and Christ consciousness.}
+Christian theosis concerns participation in divine life and transformation into
+likeness with God \citep{athanasius2011incarnation,papanikolaou2020theosis}. In the
+language of this paper, the highest image of the person becomes a regulative model for
+attention, conduct, sacrifice, and love. ``Christ consciousness'' is best treated as
+a modern interpretive label for this transformed orientation, not a laboratory
+measurement.
+
+\paragraph{Sacred secretion.}
+Claims of a universal monthly substance descending from the brain to the sacrum and
+returning to the head are not established by known cerebrospinal-fluid or pineal
+physiology \citep{hladky2014csf,nichols2018pineal}. Mammalian brains can contain
+enzymatic machinery related to DMT biosynthesis, but this does not establish the
+popular cycle or its theological interpretation \citep{dean2019dmt}. A practice can
+remain meaningful without a false anatomical proof.
+
+Across these traditions, one structure repeats:
+
+\begin{equation}
+\text{image}
+\longrightarrow
+\text{discipline}
+\longrightarrow
+\text{transformed identity}
+\longrightarrow
+\text{transformed conduct}.
+\label{eq:tradition}
+\end{equation}
+
+That structure is compatible with the formal model. The spiritual traditions speak
+in symbols about the selection and embodiment of a higher policy. Science can study
+the mediators without exhausting the meaning.
+
+% ============================================================
+\section{A Practical Materialization Protocol}
+% ============================================================
+
+The theory becomes useful only when it changes practice. The following protocol is a
+direct translation of the causal model.
+
+\paragraph{1. Specify the physical target.}
+State what will be observable if the vision becomes real. ``Become successful'' is
+not yet a target. ``Publish the manuscript, place it in the portfolio, and obtain
+three qualified reviews'' is. A physical criterion prevents feeling from being
+mistaken for completion.
+
+\paragraph{2. Visualize the process and the identity.}
+Represent the finished state vividly, then rehearse the process that creates it.
+Include the difficult email, the training session, the rejection, the recovery, and
+the next attempt. Imagine the kind of person who performs those actions reliably.
+Outcome imagery gives direction; process imagery prepares policy.
+
+\paragraph{3. Convert vision into implementation intentions.}
+Write if-then rules for the moments that matter: \emph{if it is 7:00 a.m., I open the
+manuscript before messages}; \emph{if I receive a rejection, I record the reason and
+send the next submission within twenty-four hours}. The rule moves choice from a
+future depleted state into a present reflective state.
+
+\paragraph{4. Prepare the body.}
+Protect sleep, circadian regularity, hydration, adequate nutrition, movement, and
+recovery. Seek clinical care when symptoms require it. This is not wellness decoration.
+It is maintenance of the system that must execute the policy.
+
+\paragraph{5. Design the environment.}
+Remove cues that trigger the competing identity. Disable unnecessary notifications,
+place tools where action begins, reduce friction for desired behavior, and add social
+commitments where they help. Willpower is one variable; environment changes the policy
+distribution before willpower is tested.
+
+\paragraph{6. Act and produce evidence.}
+Create a physical trace each cycle: a page, call, prototype, application, workout,
+conversation, or transfer of resources. Evidence tells the nervous system that the
+identity is no longer imaginary. It also exposes the plan to the world, where
+correction becomes possible.
+
+\paragraph{7. Measure, learn, and repeat.}
+Compare the result with the target. Keep the vision stable enough to guide action and
+flexible enough to learn. Update the policy, not merely the affirmation. Repetition
+then improves both the quality and number of attempts, which is the mechanism in the
+repetition theorem.
+
+Contemplative practice can support several steps. Meditation has been associated with
+differences in default-mode activity, self-regulation, and, in some contexts,
+transcriptional measures \citep{brewer2011meditation,vago2012sart,black2013meditation}.
+The responsible conclusion is not that meditation guarantees external outcomes. It
+can reduce automaticity, stabilize attention, and change the agent who meets the next
 choice.
 
-Within EAH, sleep and circadian alignment can affect at least three terms: the size of
-$\Pset_{\rho}$, the policy-selection distribution $P(\pi\mid I,B,E)$, and the execution
-reliability embedded in $\rho$. A person may retain an intention while losing access
-to the sequence of actions that expresses it.
-
-\subsection{Metabolism, hydration, and inflammation}
-
-In humans, metabolic state has been experimentally associated with changed economic
-decisions under risk \citep{symmonds2010metabolic}. Mild dehydration studies report
-effects on vigilance, working memory, fatigue, tension, or mood, but the affected
-measures differ across samples and many cognitive outcomes remain unchanged
-\citep{ganio2011dehydration,armstrong2012dehydration}. The appropriate conclusion is
-conditional: hydration can influence components of performance under specified
-conditions, not that a glass of water unlocks a hidden timeline.
-
-Experimental endotoxin provides a more direct test of inflammatory signaling.
-Dose-dependent immune activation in healthy volunteers changed mood and selected
-neurobehavioral functions \citep{grigoleit2011endotoxin}. Inflammation is not merely a
-metaphor for mental static. It is a family of measurable processes that can alter
-motivation, energy, affect, and cognition. At the same time, no single inflammatory
-marker explains all depression, and ``decoherence'' is not a clinical synonym.
-
-\subsection{Food and the gut--brain axis}
-
-An inpatient randomized controlled trial found that an ultra-processed diet caused
-greater ad libitum calorie intake and weight gain than an unprocessed diet matched on
-presented macronutrients, sugar, sodium, and fiber
-\citep{hall2019ultraprocessed}. This is strong evidence for a causal dietary effect on
-intake under the tested conditions. It does not show that every processed ingredient
-is toxic or that the food supply was coordinated to suppress consciousness.
-
-The gut--brain axis is bidirectional and includes neural, immune, endocrine, and
-metabolic routes. A small randomized study of healthy participants found that a
-four-week multispecies probiotic intervention was associated with subtle shifts in
-microbiome profiles and altered neural responses during emotional tasks
-\citep{bagga2018probiotics}. Such evidence makes microbial contribution plausible and
-sometimes supported. It does not justify the deterministic statement that gut
-bacteria choose a person's mood, nor does one strain or mixture generalize to the
-entire microbiome.
-
-\subsection{Accumulation without a quantum field}
-
-These variables can interact. Sleep changes food choice; diet influences metabolic
-state; inflammation affects fatigue; fatigue increases default responding; default
-responding changes the environment encountered tomorrow. A repeated loop can create
-the subjective experience of being trapped because the same state selects the same
-policy and the same policy recreates the same state.
-
-This account explains a ``narrow band of probability'' without positing macroscopic
-quantum decoherence. The band is the empirically estimated distribution of outcomes
-under a contracted policy set. Its width can be measured through option generation,
-behavioral variability, feedback updating, execution fidelity, and actual goal
-attainment.
+The protocol is intentionally ordinary in its mechanics and extraordinary in its
+implication. A reality that does not yet exist can organize present matter through a
+living person. The future reaches backward as information in a model; the person
+carries that information forward as action.
 
 % ============================================================
-\section{Manifestation Without Magic}
-\label{sec:manifestation}
+\section{Predictions and Conclusion}
 % ============================================================
 
-The word \emph{manifest} comes from making something evident or actual. On that
-meaning, the decisive question is not whether thought matters. It plainly does. The
-question is which causal path connects a thought to an outcome.
-
-\subsection{Expectation changes internal physiology}
-
-Expectation can produce measurable biological effects. In Parkinson's disease,
-placebo expectation was associated with endogenous dopamine release
-\citep{delafuente2001placebo}. In experimental pain, placebo conditions altered both
-anticipatory and pain-related brain activity \citep{wager2004placebo}. These findings
-are neither ``merely imaginary'' nor evidence that belief can cause any desired
-external event. They show that information and expectation enter a biological control
-system and change its response.
-
-This is an important correction to a simple matter-versus-mind picture. A symbol, a
-clinician's words, or a learned context can become biologically causal because the
-organism interprets it. Meaning is not outside physiology once perception, prediction,
-autonomic response, endocrine signaling, and action are part of the mechanism.
-
-\subsection{Imagery is rehearsal, not delivery}
-
-Kinesthetic motor imagery can train components of a motor program. A small controlled
-study reported increased cortical signal and strength following imagery training of
-forceful contractions \citep{yao2013imagery}. The result is compatible with neural
-rehearsal and altered recruitment. It does not imply that imagining a stronger muscle
-adds mass without metabolism or that visualizing a contract causes another person to
-sign it.
-
-Mental simulation is most useful when it improves a subsequent policy. It can expose a
-missing step, lower novelty, precommit a response, or sharpen cues for action. It can
-also become a substitute reward that reduces action. EAH therefore predicts effects
-from the change in policy distribution, not from vividness alone.
-
-\subsection{Intention needs an executable grammar}
-
-Implementation intentions translate a goal into a conditional rule of the form
-``if situation $X$ occurs, I will perform action $Y$.'' Experimental evidence shows
-that these rules can improve goal attainment, especially when the underlying goal
-intention is active and strong \citep{sheeran2005implementation}. In the language of
-Equation~\eqref{eq:agency}, the rule raises the probability of a target policy when its
-cue appears.
-
-The difference between aspiration and implementation is the difference between a
-desired outcome and an executable grammar. ``I intend to be healthy'' assigns value.
-``After I put the coffee on, I will take the prepared medication'' binds a cue to an
-action. Repeated successful execution then modifies the environment and produces
-evidence that updates self-prediction.
-
-\subsection{Practice changes the practitioner}
-
-Meditation provides a useful case because spiritual and biological descriptions can
-be studied together. Experienced meditators have shown differences in default-mode
-network activity and connectivity during meditation
-\citep{brewer2011meditation}. A small randomized trial in stressed family caregivers
-reported differences in leukocyte transcriptional responses after a yogic meditation
-program compared with relaxing music \citep{black2013meditation}. Frameworks of
-mindfulness connect self-awareness, self-regulation, and self-transcendence to
-trainable cognitive and neural processes \citep{vago2012sart}.
-
-These findings warrant cautious support for state and trait change. They do not
-establish a single frequency of enlightenment, and associations in experienced
-practitioners do not by themselves prove causality. Practice becomes an embodied
-technology only to the extent that dose, instruction, adherence, comparison condition,
-outcome, and adverse effects are measured.
-
-\subsection{What ``frequency'' can responsibly mean}
-
-Frequency has precise meanings when a periodic process is specified: neural
-oscillation, respiration, heart rate, acoustic pressure, electromagnetic radiation, or
-behavioral repetition. It can also function metaphorically as a stable pattern of
-affect and conduct. Problems arise when the meanings are exchanged mid-argument.
-
-Within EAH, the most defensible version of ``you are the frequency'' is behavioral:
-what a person repeatedly attends to and enacts becomes more probable through learning,
-habit, environment design, and social feedback. This is not a cosmic carrier wave. It
-is a temporal pattern in a causal system.
-
-\begin{remark}[A bounded formula for manifestation]
-A concise statement of the paper is
-\begin{equation}
-\text{manifestation}
-=
-\text{intention}
-\times
-\text{embodied capacity}
-\times
-\text{policy}
-\times
-\text{action}
-\times
-\text{feedback},
-\end{equation}
-where multiplication indicates a series system: a near-zero term can constrain the
-whole pathway. This is a conceptual decomposition, not a calibrated physical law.
-\end{remark}
-
-% ============================================================
-\section{Manufactured Interference Without a Master Plot}
-\label{sec:interference}
-% ============================================================
-
-The source thesis attributes processed food, notifications, outrage, sexual
-degeneracy, and nine-to-five work to a world designed to make people forget their
-divinity. The evidence supports a narrower structural argument. Systems optimized for
-consumption and engagement can degrade conditions for reflective agency even when no
-actor intends spiritual suppression.
-
-\subsection{Attention is a rival resource}
-
-Receiving a phone notification can disrupt performance even when the recipient does
-not interact with the device \citep{stothart2015notifications}. Behavioral and
-electrophysiological work likewise finds costs to cognitive control from smartphone
-notifications \citep{upshaw2022notifications}. A single interruption is small. A
-system of repeated cues can repeatedly reset the competition for attention, fragment
-long-horizon policies, and increase selection of immediately available actions.
-
-Habit research shows why context matters. Stable cues can trigger practiced behavior
-with limited deliberation, while a context change can disrupt the habit and return
-behavior to more intentional control \citep{wood2005habits}. ``Default settings'' are
-therefore not merely rhetoric. They can be described as learned cue-policy mappings
-whose selection probability has become insensitive to a current high-level goal.
-
-\subsection{Optimization produces externalities}
-
-Industrial recommendation systems are explicitly built to rank items from enormous
-candidate spaces using behavioral data and objectives related to engagement and
-watching \citep{covington2016youtube}. Food products compete for repeat purchase and
-palatability; an inpatient trial shows that an ultra-processed dietary environment can
-increase intake under controlled conditions \citep{hall2019ultraprocessed}. These are
-documented objective functions and outcomes.
-
-No secret council is required. If platforms profit from attention, content that holds
-attention receives systematic advantage. If producers profit from consumption,
-products that encourage consumption receive systematic advantage. The aggregate
-environment can become hostile to sustained agency through local optimization.
-Calling this a conspiracy weakens the critique because it replaces measurable
-incentives with an unnecessary hidden intention.
-
-The monitor-manipulation patent shows that deliberate subliminal field modulation was
-proposed as a technical possibility \citep{loos2003patent}. It does not show that
-present platforms deploy the method. A claim of actual deployment requires device
-measurements, code or signal evidence, and causal exposure studies. Documented
-engagement optimization already explains a large share of attentional capture without
-assuming an unobserved stimulation layer.
-
-\subsection{Moral language and scientific language}
-
-``Degeneracy'' is a moral and political judgment, not an operational psychological
-variable. A professional account must specify the proposed harm: compulsivity,
-exploitation, loss of consent, attentional capture, sleep displacement, isolation, or
-conflict with a person's chosen commitments. This permits measurement and protects
-against labeling unfamiliar identities or harmless pleasure as pathology.
-
-EAH assigns causal responsibility at more than one level. Individuals can redesign
-cues and practice policies. Firms select objective functions. Institutions regulate
-externalities. Social conditions change the cost of rest, food, safety, and
-contemplation. ``Treat your body well'' is incomplete when environments constrain the
-available policies; ``the system did it'' is incomplete when people can still create
-local structure. Agency is embodied and situated.
-
-% ============================================================
-\section{Ancient Symbolic Maps of Transformation}
-\label{sec:symbolic}
-% ============================================================
-
-The traditions grouped together as alchemy, kundalini, sacred secretion, and Christ
-consciousness are historically distinct. Treating them as one secret physiological
-manual risks erasing their differences. Yet comparison can be illuminating when it is
-offered as interpretation rather than proof of a single hidden anatomy.
-
-\subsection{Alchemy: matter, symbol, and disciplined transformation}
-
-Historical alchemy included practical work with substances, cosmology, medicine, and
-spiritual aspiration. The Hermetic corpus links knowledge of cosmos, mind, and divine
-order \citep{copenhaver1992hermetica}; South Asian alchemical traditions developed
-their own embodied and soteriological systems \citep{white1996alchemicalbody}. In
-Jung's psychological reading, alchemical images become symbols of integration and
-transformation \citep{jung1968alchemy}.
-
-EAH offers a limited scientific analogue. Repeated practice can transform the
-agent who perceives and acts, and that altered agent changes future outcomes. The
-\emph{prima materia} in this analogy is not a supernatural fluid but the coupled state
-of attention, body, habit, and environment. The analogy is useful because it emphasizes
-work, sequence, and feedback. It ceases to be science if each symbolic operation is
-declared a literal biochemical event without measurement.
-
-\subsection{Kundalini: text and phenomenology}
-
-Kundalini belongs to particular tantric and later yogic textual histories. The
-\emph{Saradatilakatantra}, for example, presents a structured yoga involving centers,
-breath, visualization, and a coiled power \citep{buhnemann2011kundalini}. Modern
-interview research records spiritually transformative experiences described as
-kundalini awakening, including somatic, affective, perceptual, and life-changing
-features \citep{woollacott2021kundalini}. Such interviews establish reported
-phenomenology, not a spinal energy substance.
-
-A rigorous research program could measure breathing, autonomic function, sleep,
-movement, endocrine state, neural activity, expectation, cultural framing, and
-long-term outcomes during defined practices. It should also measure distress and
-impairment. The categories ``real experience'' and ``established anatomical mechanism''
-must not be collapsed.
-
-\subsection{Theosis and Christ consciousness}
-
-Christian theosis names participation in divine life, classically expressed in
-Athanasius's account of incarnation and developed across Christian theology
-\citep{athanasius2011incarnation,papanikolaou2020theosis}. It concerns transformation
-of the person in relation to God, virtue, communion, and grace. ``Christ
-consciousness'' is a later and broader phrase, often used for a mode of unity, love,
-self-giving, or divine awareness. It is not a standard neuroscientific construct.
-
-The empirical and theological statements can coexist without pretending to be the
-same statement. Contemplative discipline may train attention and regulation.
-Self-transcendent experiences form a recognizable but heterogeneous psychological
-family \citep{yaden2017selftranscendent}. Theology interprets the source, purpose, and
-ultimate meaning of transformation. Neuroscience measures correlates and consequences.
-Neither discipline gains by disguising its question as the other's answer.
-
-\subsection{The sacred-secretion claim}
-
-Some modern syntheses propose a monthly ``sacred secretion'' that descends from the
-brain, rests near the sacrum, rises through the spine, and becomes Christ oil when
-preserved. No established anatomical literature demonstrates that cycle.
-Cerebrospinal fluid is continuously produced, circulated, exchanged, and cleared
-through physiological pathways more complex than the proposed monthly descent and
-ascent \citep{hladky2014csf}.
-
-Endogenous \emph{N,N}-dimethyltryptamine has been measured in mammalian systems, but
-rat-brain work indicates that its synthesis is not confined to the pineal gland
-\citep{dean2019dmt}. Reviews specifically caution against turning pineal DMT
-speculation into fact \citep{nichols2018pineal}. Neither finding establishes the
-sacred-secretion cycle.
-
-The symbolic comparison can still carry meaning: disciplined attention, restraint,
-prayer, breath, and ethical alignment are described as preparing a person for
-transformation. That is an interpretive thesis. Its dignity does not depend on calling
-cerebrospinal fluid an oil or assigning Christ to a molecule.
-
-\begin{remark}[Plural maps, partial overlap]
-Alchemy emphasizes transformation, kundalini traditions articulate embodied ascent,
-and theosis describes participation in divine life. Their partial structural overlap
-does not prove common origin or identical mechanism. Comparison should preserve both
-resonance and difference.
-\end{remark}
-
-% ============================================================
-\section{Claim Audit}
-\label{sec:audit}
-% ============================================================
-
-Table~\ref{tab:audit} applies the epistemic ladder to the most specific claims in the
-source thesis. A mixed verdict does not mean that every part is half true. It means an
-accurate premise has been joined to a conclusion that needs separate evidence.
-
-\begingroup
-\small
-\renewcommand{\arraystretch}{1.18}
-\begin{longtable}{
-  >{\raggedright\arraybackslash}p{0.27\textwidth}
-  >{\raggedright\arraybackslash}p{0.16\textwidth}
-  >{\raggedright\arraybackslash}p{0.48\textwidth}}
-\caption{Audit of the source thesis.}\label{tab:audit}\\
-\toprule
-\textbf{Claim} & \textbf{Verdict} & \textbf{Evidence and boundary}\\
-\midrule
-\endfirsthead
-\multicolumn{3}{l}{\footnotesize\itshape Table~\ref{tab:audit} continued}\\
-\toprule
-\textbf{Claim} & \textbf{Verdict} & \textbf{Evidence and boundary}\\
-\midrule
-\endhead
-\midrule
-\multicolumn{3}{r}{\footnotesize\itshape Continued on next page}\\
-\endfoot
-\bottomrule
-\endlastfoot
-
-Russian researchers proved that words and frequencies reprogram DNA.
-&
-\textbf{Unsupported}
-&
-The linguistic-wave claim is documented \citep{gariaev2011wavegenetics}, but the
-reported phantom effect lacks successful independent replication
-\citep{brill2012phantom}. No blinded semantic-programming result is established.
-\\
-
-DNA is not code; it is a crystalline antenna.
-&
-\textbf{False dichotomy}
-&
-DNA carries sequence information \citep{crick1970central} and has physical
-charge-transport properties \citep{zwang2018dnacharge}. Neither implies reception of
-semantic commands, and physical behavior does not cancel genetic information.
-\\
-
-The heart broadcasts a measurable field three feet around the body.
-&
-\textbf{Partly true}
-&
-Magnetocardiography measures picotesla-scale cardiac fields
-\citep{roth2024magnetocardiogram}. A field has no crisp three-foot edge, and
-interpersonal transmission of thoughts has not been shown.
-\\
-
-Every person has 37 trillion cells, and neurons fire at 70 millivolts.
-&
-\textbf{Misleading precision}
-&
-Cell estimates vary with body and method \citep{hatton2023cellcount}.
-Approximately $-70$ mV usually names resting potential, not a universal firing value
-\citep{kandel2021principles}.
-\\
-
-Humans process 400 billion bits per second.
-&
-\textbf{Unsupported}
-&
-There is no single agreed channel called whole-human processing. Even a recent
-10-bits-per-second behavioral estimate \citep{zheng2025bits} has been directly
-challenged \citep{sauerbrei2025bits}.
-\\
-
-The body is a bioelectric quantum computer.
-&
-\textbf{Mixed}
-&
-Bioelectric networks regulate tissues \citep{levin2021bioelectric}; molecular quantum
-effects occur \citep{cha1989tunneling}. Evidence for quantum computation supporting
-human cognition remains absent, with serious decoherence constraints
-\citep{tegmark2000decoherence}.
-\\
-
-U.S. Patent 6,506,148 proves monitors can covertly control nearby nervous systems.
-&
-\textbf{Proposed; not established}
-&
-The patent claims a low-frequency monitor-emission method and reports
-subject-controlled observations \citep{loos2003patent}. Patent examination establishes
-legal patentability criteria, not blinded replication or population efficacy
-\citep{uspto2026utility}. Visual entrainment is independently measurable, but through
-a documented sensory pathway \citep{williams2004displays}.
-\\
-
-Each choice selects which quantum timeline is experienced.
-&
-\textbf{Interpretive}
-&
-Different choices alter ordinary conditional futures. Many-worlds does not provide a
-demonstrated mechanism for voluntary branch selection \citep{vaidman2022manyworlds}.
-\\
-
-The declassified Gateway report proves consciousness can escape time and space.
-&
-\textbf{Institutional interest; not validation}
-&
-The 1983 Army memorandum constructs a theoretical assessment of Gateway and proposes
-future experiments \citep{mcdonnell1983gateway}. CIA archival release establishes
-provenance and custody, not endorsement or successful replication.
-\\
-
-Sleep loss, inflammatory food, and ambient EMF decohere the human field.
-&
-\textbf{Mixed and undefined}
-&
-Sleep, circadian state, diet, and experimental inflammation affect selected outcomes
-\citep{whitney2015sleep,chellappa2018circadian,hall2019ultraprocessed,grigoleit2011endotoxin}.
-No measured personal quantum field or decoherence variable connects them.
-Exposure claims require specified frequency and dose
-\citep{icnirp2020guidelines}.
-\\
-
-Gut bacteria and dehydration determine mood and decision-making.
-&
-\textbf{Overstated}
-&
-Human intervention evidence supports some state effects, with small samples,
-strain-specificity, task-dependence, and null outcomes
-\citep{bagga2018probiotics,ganio2011dehydration,armstrong2012dehydration}.
-Influence is not determination.
-\\
-
-Depression is decoherence.
-&
-\textbf{False category}
-&
-Depression is a heterogeneous clinical syndrome. Quantum decoherence is a physical
-process in a specified state. Replacing diagnosis with metaphor can delay appropriate
-assessment and care.
-\\
-
-The world was designed to make people forget their divinity.
-&
-\textbf{Unsupported as coordination}
-&
-Notifications disrupt attention \citep{stothart2015notifications}, habits follow
-context \citep{wood2005habits}, and recommendation systems optimize behavioral
-objectives \citep{covington2016youtube}. These mechanisms can produce interference
-without a master plan.
-\\
-
-Kundalini, Christ consciousness, and a monthly sacred secretion are one physiology.
-&
-\textbf{Interpretive overlap; unsupported anatomy}
-&
-Tantric texts, Christian theosis, and modern reports describe genuine traditions and
-experiences \citep{buhnemann2011kundalini,papanikolaou2020theosis,woollacott2021kundalini}.
-Known cerebrospinal-fluid and pineal evidence does not establish the proposed cycle
-\citep{hladky2014csf,nichols2018pineal}.
-\\
-\end{longtable}
-\endgroup
-
-The audit reveals a recurring structure. The source material begins with a true
-statement, removes its scale and conditions, attaches a metaphysical conclusion, and
-then returns the authority of the conclusion to the original fact. The correction is
-not to deny the fact. It is to preserve the missing conditions.
-
-% ============================================================
-\section{Falsifiable Predictions and Proposed Tests}
-\label{sec:predictions}
-% ============================================================
-
-A framework that explains every result after the fact explains nothing. The following
-predictions commit EAH to observable outcomes and, equally important, to negative
-results.
-
-\begin{prediction}[State-dependent expansion]
-\label{pred:state}
-In participants with verified sleep or circadian disruption, restoration of sleep
-opportunity and timing will increase the number of task-relevant policies generated,
-feedback-sensitive policy switching, and execution reliability relative to an
-attention-matched control. Improvements should be mediated by measured state changes,
-not by a generic belief score alone.
+A theory earns credibility by risking failure. The following predictions separate the
+model from unfalsifiable affirmation.
+
+\begin{prediction}
+Process visualization combined with implementation intentions will outperform
+outcome visualization alone on externally scored goals. The advantage will be
+mediated by action frequency and execution quality.
 \end{prediction}
 
-A preregistered study could repeatedly sample sleep, circadian phase, inflammation,
-metabolic measures, option generation, reversal learning, and real-world execution.
-The prediction fails in its proposed domain if state restoration changes subjective
-wellness but produces no reliable change in the policy or outcome measures.
-
-\begin{prediction}[The action mediator]
-\label{pred:action}
-Implementation intentions plus environmental cue design will outperform outcome
-visualization alone on independently verified goal completion. When action frequency
-and quality are held fixed, visualization will not add a reliable effect on external
-outcomes that participants cannot otherwise influence.
+\begin{prediction}
+Restoring sleep and circadian regularity in disrupted participants will expand
+measured policy generation, feedback updating, and execution reliability on defined
+tasks.
 \end{prediction}
 
-This is a direct test of Proposition~\ref{prop:mediator}. The first clause expects a
-behavioral effect consistent with implementation-intention research
-\citep{sheeran2005implementation}. The second is the negative boundary. A persistent,
-multilaboratory residual effect on isolated external outcomes would falsify the
-ordinary causal graph.
-
-\begin{prediction}[Context reopens control]
-\label{pred:context}
-Removing high-frequency notification cues and changing the physical context of a
-target habit will increase goal-consistent choice most strongly for participants whose
-baseline behavior is cue-driven. The effect will be mediated by fewer attention
-switches and reduced automatic policy selection.
+\begin{prediction}
+Notification removal and context redesign will improve intentional control most in
+participants whose baseline behavior is strongly cue-driven.
 \end{prediction}
 
-The prediction is stronger than ``phones are distracting.'' It specifies a moderator,
-a mediator, and an outcome. Failure of the measured mediators to account for the
-behavioral change would require revision of the mechanism.
-
-\begin{prediction}[No unitary biological bitrate]
-\label{pred:bitrate}
-Estimates of human information rate will differ by orders of magnitude when computed
-for sensory transduction, neural population activity, motor control, conscious report,
-and task-level behavior. No context-free scalar will predict performance across all
-levels better than level-specific measures.
+\begin{prediction}
+Repeated directed attempts will explain apparent ``sudden'' manifestations better
+than outcome imagery alone when the action history is measured prospectively.
 \end{prediction}
 
-This prediction can be rejected by a well-defined common coding model whose single
-rate generalizes across levels and tasks. Until then, very large or very small global
-bitrate claims should be treated as properties of the measurement choice.
-
-\begin{prediction}[Semantic DNA programming fails]
-\label{pred:dna}
-In a blinded, multilaboratory experiment with calibrated physical exposure, speech
-samples matched for acoustic energy but differing in semantic meaning will not produce
-sequence-independent, meaning-specific changes in purified DNA or cells beyond
-chance, contamination, and ordinary stress responses.
+\begin{prediction}
+Semantic DNA programming will fail blinded, multilaboratory testing unless a
+meaning-specific effect survives energy matching, translation, sham exposure, and
+open raw-data review.
 \end{prediction}
 
-The refuting result would be a reproducible semantic effect that survives language
-translation, speaker change, sham exposure, multiple-comparison correction, raw-data
-release, and mechanistic follow-up. This test allows the extraordinary claim to win,
-but only by doing experimental work.
-
-\begin{prediction}[No sacred-secretion cycle]
-\label{pred:secretion}
-Intensive longitudinal measurement will not reveal a universal monthly substance that
-travels from brain to sacrum and back in the pathway asserted by the sacred-secretion
-account. Reported spiritual intensity may covary with sleep, expectation, practice,
-autonomic state, hormones, or other measured variables without establishing that
-anatomy.
+\begin{prediction}
+Longitudinal measurement will not reveal one universal monthly
+brain-to-sacrum-to-brain secretion cycle across healthy adults.
 \end{prediction}
 
-This negative prediction separates experience from mechanism. Discovery of a
-previously unknown reproducible cycle with a defined molecule, route, timing, and
-causal intervention would falsify it.
-
-\begin{prediction}[Practice changes reachable futures through measured mediators]
-\label{pred:practice}
-Well-specified contemplative practice will change selected attention,
-self-regulation, and self-transcendence measures for some populations, and these
-changes will predict later behavior through measurable mediators. The same practice
-will not reliably influence shielded random physical outcomes when behavior and
-communication are excluded.
+\begin{prediction}
+Contemplative practice will change selected measures of attention, regulation, and
+self-transcendence through measurable mediators, but it will not reliably alter
+shielded random physical outcomes.
 \end{prediction}
 
-The prediction honors both sides of the epistemic ladder. It expects embodied
-transformation and rejects the need to inflate that transformation into unbounded
-physical control.
+The final claim can now be stated simply. Human beings are powerful, but their power
+is not well described as omnipotent thought. It is the power to model what is absent,
+reorganize themselves around that model, and apply directed force to the world. The
+mind supplies a future before the future is physical. The body determines whether the
+future can be carried. Action gives the image public consequence. Feedback corrects
+the difference between desire and reality.
 
-Taken together, Predictions~\ref{pred:state} through~\ref{pred:practice} define a
-research program. The central dependent variable is not a mood adjective called
-``high frequency.'' It is the geometry of accessible action and outcome: how many
-relevant policies are represented, how reliably they are executed, how quickly they
-adapt to feedback, and which independently verified futures follow.
-
-% ============================================================
-\section{Counterarguments, Limits, and Ethical Cautions}
-\label{sec:limits}
-% ============================================================
-
-\subsection{Is the thesis merely that health affects decisions?}
-
-The component facts are not new, and they should not be presented as a secret manual
-suppressed since the 1990s. The proposed contribution is their organization around
-executable policies and accessible futures. EAH distinguishes three mechanisms that a
-generic wellness claim blends together: state can change the policies represented,
-their selection weights, and their execution reliability. It also commits to the
-mediator requirement, which blocks an easy slide from intention to unexplained
-external causation.
-
-This contribution may still prove too coarse. Different biological variables may not
-share a useful common geometry, and the policy-set metaphor may add little beyond
-existing cognitive-control and decision models. Predictions~\ref{pred:state} and
-\ref{pred:context} are designed to expose that possibility.
-
-\subsection{Does the model reduce spiritual life to physiology?}
-
-No physiological measure settles whether God exists, whether consciousness is
-fundamental, or what a transformative experience ultimately means. EAH is a model of
-how embodied intention changes lived and enacted reality. It is silent about ultimate
-ontology beyond requiring that proposed physical mechanisms face physical tests.
-
-This restraint cuts both ways. A neural correlate does not explain away prayer, love,
-or theosis. A sacred interpretation does not establish a glandular pathway. First-
-person meaning, communal tradition, ethics, and third-person measurement answer
-different questions that can constrain one another without becoming identical.
-
-\subsection{Does biology become destiny again?}
-
-An accessible future set is indexed to a time, environment, threshold, and horizon.
-It is not a permanent essence. Tools, training, medicine, relationships,
-accommodations, institutions, and chance can change both $B$ and $E$. The model is
-therefore anti-deterministic in the practical sense: it identifies intervention
-points.
-
-It also rejects the opposite cruelty, the idea that anyone can obtain any outcome by
-holding the correct thought. Bodies differ. Resources differ. Other agents act.
-Randomness and structural constraints remain. Failure is not evidence of deficient
-faith or low vibration.
-
-\subsection{Clinical and public-health boundaries}
-
-The statement ``you are not depressed, you are decoherent'' is scientifically false
-and potentially harmful. Depression can involve urgent risk and deserves qualified
-assessment. Sleep, nutrition, movement, social connection, contemplative practice,
-and environment may be relevant to care, but a conceptual framework is not a
-diagnosis and this paper is not medical advice. Biological state should widen the
-care model, not become a reason to abandon evidence-based treatment.
-
-Environmental health claims require equal precision. Electromagnetic exposure has
-frequency, intensity, duration, geometry, and tissue-coupling parameters. Safety
-guidelines for radiofrequency exposure are written in those terms
-\citep{icnirp2020guidelines}. ``EMF saturation'' without them is not a testable dose.
-This does not mean every possible exposure question is closed. It means the question
-must be specified before fear can count as evidence.
-
-\subsection{Measurement can become another cage}
-
-An optimization system for sleep, diet, heart rate, productivity, and attention can
-itself consume the attention it was meant to restore. Biological bandwidth is not a
-moral score, and no wearable measures consciousness or divinity. The goal is not
-perfect control. It is sufficient coordination to recover reflective choice and act
-in accordance with chosen values.
-
-% ============================================================
-\section{Conclusion: Becoming the Broadcast}
-\label{sec:conclusion}
-% ============================================================
-
-The human body is electrically organized, chemically sustained, environmentally
-coupled, and capable of changing itself through learning and practice. DNA carries
-information without dictating destiny. Cells use membrane potentials to coordinate
-form. Hearts generate measurable magnetic fields. Expectations alter physiology.
-Sleep, circadian timing, metabolism, inflammation, hydration, food environments,
-microbial systems, habits, and notifications can change parts of perception and
-action. None of these facts requires a hidden quantum manual, and none is made less
-remarkable by being mechanistic.
-
-The phrase ``you create your reality'' becomes defensible when reality is specified.
-An agent constructs lived reality by selecting what is attended to, modeled, and
-valued. An agent helps construct enacted reality by choosing and repeating actions
-that alter the environment. Biological state changes which policies can be represented
-and reliably executed, so it changes the distribution of reachable futures. That is
-the Embodied Agency Hypothesis.
-
-The theory draws a bright line at ontic control. Quantum tunneling in a cell is not
-evidence that intention selects a universe. A cardiac field is not evidence of thought
-transmission. Charge movement in DNA is not semantic programming. A spiritual
-experience is not proof of a monthly cerebrospinal oil. These claims may be tested, but
-they cannot be installed as premises before the result.
-
-Alchemy, kundalini, theosis, and Christ consciousness can still illuminate the
-phenomenology and ethics of transformation. Their shared invitation is not merely to
-hold an idea but to become the kind of person through whom the idea acquires form.
-Scientific language translates part of that process into state, policy, action, and
-feedback. Spiritual language asks what the transformation is for.
-
-To stop being only a signal and become a broadcast, in the strongest defensible sense,
-is to cease living exclusively as the output of inherited cues. It is to regulate the
-conditions of attention, choose an executable policy, act, read the consequence, and
-repeat. The mind does not need exemption from causality to be powerful. Its power is
-that, through a living body, it enters causality.
+This is how the mental plane descends into the physical plane. Not by skipping
+causality, but by entering it. Not every dream will materialize, because other agents,
+chance, time, and material constraints are real. Yet no designed future arrives
+without first being represented. The image is not the finished world. It is the first
+causal form of that world.
 
 \bibliographystyle{plainnat}
 \bibliography{refs}

@@ -2,14 +2,16 @@
 
 ## Thesis
 
-The paper defines alchemy as the disciplined process by which an imaginal form is
-embodied, enacted, and stabilized as material reality. The defensible causal chain is:
+The paper defines alchemy as the disciplined process by which a mental form is embodied
+and enacted through a human being, then stabilized as physical reality. It uses exactly
+two planes: the mental/astral plane and the physical plane. The conscious and embodied
+human is the alchemical bridge between them. The defensible causal chain is:
 
-`imaginal form -> embodied state -> policy -> action -> world change -> feedback`
+`mental form -> embodied human bridge -> policy -> action -> physical reality -> feedback`
 
 The paper does not claim that thought alone violates physical law. It argues that
-conscious representation changes attention, valuation, physiology, identity, and
-action, thereby changing the distribution of reachable outcomes.
+mental forms change attention, valuation, physiology, identity, and action through the
+human bridge, thereby changing the distribution of reachable physical outcomes.
 
 ## Evidence layers
 
@@ -32,6 +34,15 @@ action, thereby changing the distribution of reachable outcomes.
 The mediation, reachable-future, repetition, and identity-convergence results are
 deductions inside the paper's stated model. They are not presented as newly discovered
 laws of physics.
+
+### Two-plane interpretation
+
+- The mental/astral plane contains mental forms: images, symbols, intentions, goals,
+  identities, and models of possible realities.
+- The physical plane contains embodied action and observable reality.
+- The body is not a third plane. It is part of the human alchemical bridge.
+- The formal model establishes what mental representation can do through embodied
+  mediators. It does not claim experimental proof of an independent astral substance.
 
 ### Historical and interpretive synthesis
 

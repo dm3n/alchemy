@@ -37,8 +37,10 @@ not CIA authorship, experimental confirmation, or scientific endorsement.
 
 In the paper, Gateway is treated as a case of technological alchemy: an attempt to
 translate older disciplines of attention and transformation into a staged technical
-system. That interpretation concerns the structure of the program. It does not turn the
-memorandum's speculative mechanisms into established science.
+system. Within the paper's two-plane model, it attempts to condition the human bridge
+that carries mental forms into physical action. That interpretation concerns the
+structure of the program. It does not turn the memorandum's speculative mechanisms
+into established science.
 
 ## Evidence rule
 

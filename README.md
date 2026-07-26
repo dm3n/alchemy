@@ -8,52 +8,53 @@ Daniel Ray Edgar, July 2026
 
 ## Thesis
 
-Human beings can hold a form that does not yet exist, organize the body and identity
-around it, act from it, and stabilize its consequences in the physical world.
+Every deliberately created reality exists first as a mental form in the mental/astral
+plane. The conscious and embodied human carries that mental form into the physical
+plane through identity, policy, action, and feedback.
 
 The paper defines this operation precisely:
 
-> Alchemy is the disciplined process by which an imaginal form is embodied, enacted,
-> and stabilized as material reality.
+> Alchemy is the disciplined process by which a mental form is embodied and enacted
+> through a human being, then stabilized as physical reality.
 
 Its causal chain is:
 
 ```text
-imaginal form -> embodied state -> policy -> action -> world change -> feedback
+mental form -> embodied human bridge -> policy -> action -> physical reality -> feedback
 ```
 
 Consciousness does not materialize a desired reality by escaping causality. It
 materializes reality by entering causality through a trained body, a coherent identity,
 repeated action, and correction by evidence.
 
-## Three realms
+## Two planes and the human bridge
 
-- **Imaginal realm:** images, symbols, goals, identities, and models of possible
-  futures.
-- **Embodied realm:** attention, expectation, physiology, skill, identity, and action
-  readiness.
-- **Material realm:** observable artifacts, relationships, institutions, environments,
-  and world states.
+- **Mental/Astral Plane:** mental forms, including images, symbols, intentions, goals,
+  identities, and possible realities.
+- **Physical Plane:** bodies, actions, artifacts, relationships, institutions,
+  environments, and observable world states.
+- **Human Alchemical Bridge:** consciousness holds the mental form; the body supplies
+  state, identity, and skill; policy and action carry it into physical reality;
+  feedback returns evidence.
 
-A future exists first as form. It becomes physically consequential when that form
-changes the policies of an embodied agent.
+The human being is the alchemical connection between the two planes, not a third plane.
 
 ## Formal contribution
 
-For imaginal target `I`, embodied state `B`, environment `E`, policy `pi`, and later
-world state `W`, the materialization operator is:
+For mental form `M`, embodied bridge state `B`, environment `E`, policy `pi`, and
+later physical world state `W`, the materialization operator is:
 
 ```tex
-P(W_{t+1} | I_t,B_t,E_t)
+P(W_{t+1} | M_t,B_t,E_t)
 =
 \sum_{\pi \in \Pi(B_t,E_t)}
 P(W_{t+1} | \operatorname{do}(\pi),B_t,E_t)
-P(\pi | I_t,B_t,E_t).
+P(\pi | M_t,B_t,E_t).
 ```
 
 The paper proves four results inside the stated model:
 
-1. **Mediation theorem:** if an imaginal form changes no mediator, it does not change
+1. **Mediation theorem:** if a mental form changes no mediator, it does not change
    an external result under the ordinary causal graph.
 2. **Reachable-future theorem:** an embodied state that enables more reliable policies
    can enlarge the set of reachable material futures.
@@ -68,12 +69,12 @@ thought alone controls shielded external systems.
 ## The alchemical grammar
 
 ```text
-solve -> form -> embody -> enact -> coagulate -> assay
+solve -> mental form -> embody -> enact -> coagulate -> assay
 ```
 
 - **Solve:** interrupt an inherited pattern.
-- **Form:** specify and rehearse the reality to be created.
-- **Embody:** prepare the biological and psychological vessel.
+- **Mental form:** specify and rehearse the reality to be created.
+- **Embody:** prepare the conscious, biological, and psychological bridge.
 - **Enact:** apply force through behavior.
 - **Coagulate:** stabilize the new pattern in matter, relationship, or institution.
 - **Assay:** test the work against evidence and begin again.
@@ -104,8 +105,8 @@ grant is not independent replication.
 ## Contents
 
 1. Alchemy Is the Human Operation
-2. The Three Realms
-3. The Human Vessel
+2. The Two Planes and the Human Bridge
+3. The Human Alchemical Bridge
 4. The Mathematics of Materialization
 5. Solve et Coagula
 6. Inner Alchemy

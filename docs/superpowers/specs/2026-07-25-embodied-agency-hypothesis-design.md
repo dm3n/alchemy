@@ -109,6 +109,48 @@ Claims that are unsupported or non-falsifiable will be identified as such. The
 paper will cite primary experiments where available, include negative findings and
 active disputes, and distinguish molecular quantum effects from quantum cognition.
 
+## Source Matrix
+
+| Domain | Anchor evidence | Evidential role |
+|---|---|---|
+| DNA and genetics | Crick (1970); Zwang et al. (2018); Virolainen et al. (2023) | Sequence information, regulation, gene--environment interaction, and charge transport without semantic word programming |
+| Cell count and electrophysiology | Hatton et al. (2023); Kandel et al. (2021) | Correct the universal 37-trillion-cell and 70-millivolt formulations |
+| Cardiac magnetism | Roth (2024) | Establish picotesla-scale magnetocardiography without assigning a privileged three-foot boundary |
+| Tissue bioelectricity | Levin (2021); Durant et al. (2019) | Establish membrane-potential networks as causal regulators of morphogenesis |
+| Cognitive bandwidth | Zheng and Meister (2025); Sauerbrei and Pruszynski (2025) | Show that a single whole-human bits-per-second number depends on what is measured and remains disputed |
+| Sleep and circadian state | Whitney et al. (2015); Chellappa et al. (2018) | Demonstrate causal, task-dependent impairment in adaptive decision-making and attention |
+| Metabolism, hydration, inflammation | Symmonds et al. (2010); Ganio et al. (2011); Armstrong et al. (2012); Grigoleit et al. (2011) | Establish state-dependent changes while retaining null or limited outcomes |
+| Food and microbiome | Hall et al. (2019); Bagga et al. (2018) | Separate robust diet effects from emerging, strain-specific gut--brain findings |
+| Attention and habit | Stothart et al. (2015); Upshaw et al. (2022); Wood et al. (2005) | Establish notification costs and context-dependent automaticity |
+| Commercial incentives | Covington et al. (2016) | Document recommender objective functions without inferring a coordinated suppression plot |
+| Expectation and intention | de la Fuente-Fernandez et al. (2001); Wager et al. (2004); Sheeran et al. (2005); Yao et al. (2013) | Establish physiological expectation effects and action-mediated goal effects |
+| Meditation and transcendence | Brewer et al. (2011); Black et al. (2013); Vago and Silbersweig (2012); Yaden et al. (2017) | Support trainable attentional and self-regulatory changes with appropriate sample-size limits |
+| Quantum biology | Cha et al. (1989); Panitchayangkoon et al. (2010); Duan et al. (2017); Tegmark (2000) | Establish molecular quantum effects while testing and limiting extrapolation to cognition |
+| Consciousness | Casali et al. (2013); Desmurget et al. (2009) | Establish systematic dependence on brain dynamics without claiming metaphysical closure |
+| Pineal and cerebrospinal fluid | Dean et al. (2019); Nichols (2018); Hladky and Barrand (2014) | Test and reject the asserted sacred-secretion anatomy while preserving symbolic interpretation |
+| Kundalini and theosis | Buhnemann (2011); Woollacott et al. (2021); Papanikolaou (2020); Athanasius | Distinguish textual tradition, reported phenomenology, and theology from biological mechanism |
+| Wave genetics | Gariaev et al. (2011); Brill (2012) | Document the claim source and its acknowledged lack of successful independent replication |
+
+## Viral-Claim Audit
+
+| Source claim | Verdict | Basis |
+|---|---|---|
+| Russian researchers proved DNA can be programmed by words and frequencies | Unsupported | The claim appears in a non-mainstream journal and lacks successful independent replication |
+| DNA is not genetic code but a crystalline antenna | False dichotomy | DNA carries sequence information and has physical charge-transport properties; neither fact cancels the other, and no semantic receiver has been established |
+| The heart has a measurable electromagnetic field three feet wide | Partly true, overstated | The cardiac magnetic field is measurable at picotesla scale; a privileged three-foot biological boundary is not established |
+| Neurons fire at 70 millivolts | Misstated | Approximately minus 70 millivolts usually describes a resting membrane potential, not a universal firing value |
+| Every human has 37 trillion cells | Approximation | Contemporary estimates vary by sex, age, body size, and counting method |
+| Humans process 400 billion bits per second | Unsupported as a unitary quantity | Sensory input, neural traffic, behavior, and conscious report measure different channels; even a recent 10-bits-per-second estimate is actively disputed |
+| The body is bioelectric, therefore it is a quantum computer | Invalid inference | Bioelectric regulation and molecular quantum effects are real; quantum computation at the level required for cognition is not thereby shown |
+| Every choice selects an independently existing timeline | Interpretive | Many-worlds is an interpretation of quantum mechanics, not evidence that intention controls branch selection |
+| Quantum tunneling occurs in cells | Established in specified reactions | Enzymatic hydrogen tunneling is real, but it does not establish manifestation or macroscopic timeline access |
+| Sleep loss, inflammatory food, or ambient EMF decoheres a human quantum field | Mixed and mostly unsupported | Sleep, diet, and inflammation can affect cognition through known mechanisms; the proposed field lacks an operational definition and causal evidence |
+| Gut bacteria determine mood through the vagus nerve | Supported as a bidirectional research program, overstated as a deterministic rule | Animal evidence is strong and human intervention evidence is emerging, heterogeneous, and strain-specific |
+| Dehydration impairs all decision-making | Context-dependent | Mild dehydration can alter vigilance or mood, but effects differ across tasks and studies |
+| Depression is decoherence | False and clinically unsafe | Decoherence is a physical term, not a psychiatric diagnosis |
+| The world is coordinated to suppress human divinity | Unsupported | Commercial systems have documented incentives to maximize consumption and engagement; coordination toward spiritual suppression is not required by the evidence |
+| Sacred secretion and kundalini are one monthly cerebrospinal process | Unsupported anatomy, valid symbolic comparison | Textual and phenomenological traditions exist, but the asserted secretion pathway has not been demonstrated |
+
 ## Paper Structure
 
 1. Introduction: recover the signal from the viral script.
@@ -175,4 +217,3 @@ Release is complete only if:
 - GitHub exposes the paper and updated portfolio;
 - the rebuilt itinerary contains the new paper entry;
 - Brain memory records the publication and repository locations.
-

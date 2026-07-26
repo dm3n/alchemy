@@ -102,6 +102,10 @@ from unsupported claims about intention broadcasting.
 8. A Practical Materialization Protocol
 9. Predictions and Conclusion
 
+The compiled second edition is 16 pages with 5,866 extracted words, 52 cited sources,
+two original diagrams, three proved theorems, one claim-audit table, and seven
+falsifiable predictions.
+
 ## Build
 
 Requires a LaTeX distribution with `pdflatex`, BibTeX, TikZ, and the packages named in

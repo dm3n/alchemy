@@ -1,40 +1,36 @@
 % ============================================================
-% From Vision to Reality:
-% A Formal Theory of Embodied Manifestation
+% Alchemy:
+% A Formal Theory of Consciousness, Embodiment, and Materialization
 % Daniel Ray Edgar
 % ============================================================
 \documentclass[11pt]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[margin=1.25in]{geometry}
+\usepackage[margin=1.22in]{geometry}
 \usepackage{natbib}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{mathtools}
-\usepackage{bm}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{tabularx}
-\usepackage{longtable}
-\usepackage{caption}
 \usepackage{microtype}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning, fit, calc, backgrounds}
+\usetikzlibrary{arrows.meta, positioning, calc}
 
-\definecolor{darkblue}{RGB}{0,60,120}
-\definecolor{medblue}{RGB}{0,100,200}
-\definecolor{lightblue}{RGB}{220,236,250}
-\definecolor{palegreen}{RGB}{225,242,232}
-\definecolor{paleyellow}{RGB}{251,242,211}
-\definecolor{darkgray}{RGB}{75,75,75}
+\definecolor{darkblue}{RGB}{0,55,105}
+\definecolor{medblue}{RGB}{0,100,180}
+\definecolor{lightblue}{RGB}{224,238,250}
+\definecolor{palegold}{RGB}{249,241,214}
+\definecolor{palegreen}{RGB}{226,242,233}
+\definecolor{darkgray}{RGB}{70,70,70}
 
 \hypersetup{
   colorlinks=true,
   linkcolor=darkblue,
   citecolor=darkblue,
-  urlcolor=medblue
+  urlcolor=medblue,
+  pdftitle={Alchemy: A Formal Theory of Consciousness, Embodiment, and Materialization},
+  pdfauthor={Daniel Ray Edgar}
 }
 
 \theoremstyle{plain}
@@ -44,19 +40,23 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{prediction}{Prediction}
 
-\newcommand{\Aset}{\mathcal{A}}
+\newcommand{\Aset}{\mathcal{R}}
 \newcommand{\Pset}{\Pi}
 \newcommand{\doop}{\operatorname{do}}
 
-\title{%
-  \vspace{-0.5cm}
-  \textbf{From Vision to Reality:}\\[3pt]
-  \textbf{A Formal Theory of Embodied Manifestation}
-  \vspace{0.3cm}
-}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.15em}
+\raggedbottom
 
+\title{%
+  \vspace{-0.6cm}
+  \textbf{Alchemy:}\\[4pt]
+  \textbf{A Formal Theory of Consciousness,}\\[-1pt]
+  \textbf{Embodiment, and Materialization}
+  \vspace{0.25cm}
+}
 \author{Daniel Ray Edgar}
-\date{\normalsize\today}
+\date{\normalsize July 2026}
 
 % ============================================================
 \begin{document}
@@ -65,711 +65,924 @@
 \thispagestyle{empty}
 
 \begin{abstract}
-Every human-made reality exists twice: first as a representation in one or more
-minds, then as a physical arrangement produced through action. A building begins as
-a plan. A company begins as a model of a future institution. A changed life begins
-as an image of a person who does not yet fully exist. This paper develops a concise
-theory of that passage from vision to reality.
+Alchemy is usually treated as a failed chemistry or a spiritual metaphor. This paper
+recovers its deeper structure as a theory of human causation. A person can hold a form
+that does not yet exist, organize the body and identity around that form, act from it,
+and stabilize its consequences in the physical world. Alchemy is therefore defined as
+the disciplined process by which an imaginal form is embodied, enacted, and made
+material.
 
-The central claim is that visualization can change the physical future when it changes
-attention, expectation, policy selection, and action. Biological state constrains
-which policies a person can reliably execute. Action changes the environment, and
-feedback updates both the person and the plan. I formalize this loop with a policy
-mixture model and prove three results within it. First, visualization requires a
-mediator: if policy and action do not change, an external outcome does not change
-under the ordinary causal graph. Second, an embodied state that enables more effective
-policies expands the set of reachable futures. Third, repeated well-directed attempts
-compound the probability of material success.
+The theory joins three realms. The imaginal realm contains goals, symbols, identities,
+and models of possible futures. The embodied realm contains attention, expectation,
+physiology, skill, and action readiness. The material realm contains observable
+artifacts, relationships, institutions, and environments. Their causal order is
+formalized as
+\[
+\text{form}\rightarrow\text{embodiment}\rightarrow\text{policy}
+\rightarrow\text{action}\rightarrow\text{world change}\rightarrow\text{feedback}.
+\]
+Within this model, four results are proved. A vision cannot change an external outcome
+unless some mediator changes. A more capable embodied state can enlarge the set of
+reachable futures. Repeated identity-consistent action makes an enacted identity
+converge toward a target identity under a simple update rule. Directed repetition
+increases the cumulative probability of material success.
 
-The theory integrates evidence from mental imagery, implementation intentions,
-placebo physiology, bioelectric signaling, sleep, circadian timing, metabolism,
-hydration, inflammation, habits, notifications, and contemplative practice. It also
-sets clear boundaries. Quantum effects occur in biology, but this does not establish
-voluntary selection of quantum timelines. DNA conducts charge, but this does not make
-ordinary language a genetic programming interface. U.S. Patent 6,506,148 and the
-Gateway memorandum are genuine primary records of proposed mechanisms and
-institutional inquiry, not conclusive experimental validation.
+Evidence from imagery, implementation intentions, placebo physiology, identity,
+habit, bioelectric signaling, sleep, hydration, inflammation, nutrition, attention,
+and contemplative practice supports the mediating links. Hermetic alchemy, kundalini,
+theosis, Christ consciousness, and sacred-secretion traditions are interpreted as
+symbolic maps of transformation rather than interchangeable anatomical claims. The
+1983 Army Gateway memorandum is examined as technological alchemy: an effort to
+operationalize altered-state disciplines through audio, feedback, rehearsal, and
+staged practice. U.S. Patent 6,506,148 is examined as a genuine technical claim whose
+legal grant does not substitute for independent replication.
 
-Alchemy, kundalini, theosis, Christ consciousness, and related traditions can be read
-as symbolic maps of disciplined transformation. The practical conclusion is strong
-without requiring magical causation: imagination supplies direction, the body supplies
-capacity, action supplies physical force, and feedback turns a private vision into a
-public reality.
+The conclusion is direct. Consciousness does not materialize a desired reality by
+escaping causality. It materializes reality by entering causality through a trained
+body, a coherent identity, repeated action, and correction by evidence. Human beings
+are alchemical because they can become organized by a future that exists first as
+form, then make that form physically consequential.
 \end{abstract}
 
 \newpage
 \pagenumbering{arabic}
 
 % ============================================================
-\section{The Claim}
+\section{Alchemy Is the Human Operation}
 % ============================================================
 
-The phrase \emph{manifest your reality} is used for several different claims. One is
-ordinary and true: a person imagines a future, organizes behavior around it, and helps
-bring it about. Another is possible but underspecified: vivid inner experience may
-change health, perception, and performance through mechanisms not yet fully mapped. A
-third is much stronger: thought alone selects an external quantum timeline or directly
-rearranges matter. These claims should not be treated as one.
+Every deliberately created human reality exists first as a form. A building begins as
+a drawing. A company begins as a model of an institution that has not yet opened. A
+scientific paper begins as an argument without pages. A changed life begins as an
+image of a person whose habits, relationships, and works do not yet fully exist.
+Matter is not rearranged by the image alone, but the rearrangement would not occur in
+that form without the image.
 
-This paper defends the first claim, studies the second, and turns the third into a
-testable boundary. The resulting view is neither trivial nor magical. Human beings are
-not passive observers of a fixed future. They are living causes inside the world.
-What they repeatedly represent changes what they notice, prepare for, attempt, build,
-and become. Those changes alter later physical states.
+This passage is the central human operation. Consciousness can represent what is
+absent. The body can organize itself around that representation. Action can carry the
+representation into shared space. Feedback can correct the difference between the
+desired form and the world. The process is ancient, ordinary, and profound.
 
-The simple causal chain is:
+\begin{definition}[Alchemy]
+Alchemy is the disciplined process by which an imaginal form is embodied, enacted,
+and stabilized as material reality.
+\end{definition}
 
+The definition has six verbs:
+\[
+\text{solve}\rightarrow\text{form}\rightarrow\text{embody}
+\rightarrow\text{enact}\rightarrow\text{coagulate}\rightarrow\text{assay}.
+\]
+\emph{Solve} dissolves an inherited pattern. \emph{Form} specifies the reality to be
+created. \emph{Embody} prepares the biological and psychological vessel. \emph{Enact}
+applies force through behavior. \emph{Coagulate} stabilizes the result in matter,
+relationship, or institution. \emph{Assay} tests the work against reality. The assay
+then begins another cycle.
+
+This theory accepts a strong claim and rejects an unnecessary one. The strong claim is
+that consciousness participates in producing reality. The unnecessary claim is that
+thought must rearrange distant matter without a mediator. A human being is already
+inside the causal order. Attention changes sampling. Expectation changes preparation
+and, in bounded settings, physiology. Identity changes action readiness. Action
+changes objects and other people. Repetition changes skill, habit, and reputation.
+These are not weak substitutes for magic. They are the actual means by which a private
+future acquires public form.
+
+Manifestation is therefore not passive wishing. It is alchemical materialization:
 \begin{equation}
-\text{vision}
-\longrightarrow
+\begin{aligned}
+\text{imaginal form}
+&\longrightarrow
 \text{embodied state}
 \longrightarrow
-\text{policy}
+\text{selected policy}\\
+&\longrightarrow
+\text{physical action}
 \longrightarrow
-\text{action}
-\longrightarrow
-\text{physical change}
-\longrightarrow
-\text{feedback}.
-\label{eq:chain}
+\text{material consequence}.
+\end{aligned}
+\label{eq:causal-chain}
 \end{equation}
 
-Each arrow matters. Vision without embodiment becomes fantasy. Capacity without
-direction becomes unused potential. Intention without policy remains a wish. Policy
-without action remains private. Action without feedback becomes repetition without
-learning. Manifestation is the complete loop.
+Each link is necessary under the ordinary causal model. Form without embodiment is
+fantasy. Embodiment without direction is unused capacity. Intention without policy is
+a wish. Policy without action remains private. Action without feedback becomes blind
+repetition. The complete loop is the Great Work.
 
-This is also why the body matters. A sleep-deprived, inflamed, distracted, or
-chronically stressed person does not merely feel worse. That state changes attention,
-inhibition, learning, valuation, and the reliability of action. Conversely, recovery,
-practice, environmental design, and meaning can enlarge the range of policies that
-are available at the decisive moment. Biology is not destiny, but it shapes the menu
-from which agency chooses.
-
-% ============================================================
-\section{What Manifestation Means}
-% ============================================================
-
-The word \emph{reality} needs a precise object. Three levels are sufficient.
-
-\begin{definition}[Mental plane]
-The mental plane is the set of internal representations an agent can currently form:
-images, concepts, goals, counterfactuals, memories, and models of possible futures.
-\end{definition}
-
-\begin{definition}[Embodied plane]
-The embodied plane is the agent's present capacity to perceive, regulate, decide,
-learn, and act. It includes attention, expectation, emotion, physiological state,
-skill, and action readiness.
-\end{definition}
-
-\begin{definition}[Physical plane]
-The physical plane is the observable world in which actions have consequences:
-bodies, objects, documents, money, relationships, institutions, and environments.
-\end{definition}
-
-The mental plane is not unreal. A representation is a physical process in a living
-nervous system and can be causally important before its object exists. Yet a mental
-model is not identical to the world it represents. The imagined house is not a house.
-It becomes one only when the representation controls drawings, budgets, contracts,
-tools, and coordinated labor.
-
-This distinction gives a professional meaning to \emph{astral visualization}. The
-term can describe a vivid symbolic experience in which a desired reality is perceived
-as already present. Such experience may carry unusual emotional force or a sense of
-self-transcendence \citep{james1902varieties,yaden2017selftranscendent}. The paper
-does not require an astral substance. Its causal question is simpler: does the
-experience change the embodied policies that later change the world?
+This formulation also clarifies freedom. Reality is not fixed because present choices
+change the distribution of later states. Reality is not infinitely compliant because
+material constraints, chance, time, other agents, and prior conditions remain real.
+Alchemy operates between fatalism and omnipotence. It is the art of increasing the
+probability that a chosen form becomes a lived fact.
 
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
-  node distance=7mm,
+  node distance=5mm,
   box/.style={
     rounded corners=2pt,
     draw=darkblue,
     very thick,
-    minimum height=9mm,
-    text width=2.1cm,
+    minimum height=10mm,
+    text width=2.55cm,
     align=center,
     fill=lightblue
   },
   arrow/.style={-{Latex[length=2.4mm]}, thick, darkblue}
 ]
-\node[box] (vision) {Vision\\desired future};
-\node[box, right=of vision] (body) {Embodiment\\state and skill};
-\node[box, right=of body] (policy) {Policy\\what to do};
-\node[box, right=of policy] (world) {Physical world\\observable change};
-\draw[arrow] (vision) -- (body);
-\draw[arrow] (body) -- (policy);
-\draw[arrow] (policy) -- (world);
-\draw[arrow] (world.south) -- ++(0,-0.65) -| node[pos=0.25, below, text=darkgray]
-  {\small feedback and learning} (vision.south);
+\node[box] (form) {Imaginal form\\desired reality};
+\node[box, right=of form] (body) {Embodiment\\state and identity};
+\node[box, right=of body] (action) {Enactment\\policy and action};
+\node[box, right=of action] (matter) {Materialization\\observable change};
+\draw[arrow] (form) -- (body);
+\draw[arrow] (body) -- (action);
+\draw[arrow] (action) -- (matter);
+\draw[arrow] (matter.south) -- ++(0,-0.7) -|
+  node[pos=0.28, below, text=darkgray]{\small assay, feedback, and refinement}
+  (form.south);
 \end{tikzpicture}
-\caption{The passage from a private representation to a public result. Vision sets
-direction; embodiment determines capacity; policy organizes action; physical change
-returns evidence.}
-\label{fig:loop}
+\caption{The alchemical loop. A represented future becomes causally effective through
+embodiment and action, then returns as evidence.}
+\label{fig:alchemical-loop}
 \end{figure}
 
-Manifestation, in the sense defended here, is therefore:
-
-\begin{quote}
-\emph{the process by which a represented future changes the policies of an embodied
-agent, whose actions increase the probability that the represented future becomes an
-observable state of the world.}
-\end{quote}
-
-This definition preserves the power of the idea while making it measurable. It also
-prevents two errors. The first is fatalism: the future is not fixed because present
-action changes its distribution. The second is omnipotence: the agent acts inside
-material, social, and probabilistic constraints.
-
 % ============================================================
-\section{A Formal Model}
+\section{The Three Realms}
 % ============================================================
 
-Let \(V\) denote a visualized target, \(B\) the agent's biological and cognitive
-state, \(E\) the environment, \(\pi\) a policy or organized course of action, and
-\(Y\) a later physical outcome. The basic identity is:
+Alchemy requires clear terms for the reality being transformed. The language of
+mental, astral, and physical planes is meaningful only if the levels are distinguished.
+This paper uses three realms.
+
+\begin{definition}[Imaginal realm]
+The imaginal realm is the set of forms an agent can represent: images, concepts,
+symbols, goals, counterfactuals, memories, identities, and models of possible futures.
+\end{definition}
+
+\begin{definition}[Embodied realm]
+The embodied realm is the agent's present capacity to perceive, regulate, decide,
+learn, and act. It includes attention, expectation, emotion, physiology, skill,
+identity, and action readiness.
+\end{definition}
+
+\begin{definition}[Material realm]
+The material realm is the observable world in which actions have consequences:
+bodies, objects, documents, money, relationships, institutions, and environments.
+\end{definition}
+
+The imaginal realm is not unreal. Every represented future is instantiated in a living
+system before its object exists. It can guide perception and action while remaining
+distinct from the world it represents. The imagined house is not yet shelter. The
+imagined company cannot yet employ anyone. The represented future is a causal form,
+not a finished object.
+
+The traditional astral image can be understood as an especially vivid form in the
+imaginal realm. It may be experienced as a scene, journey, presence, or symbolic world
+with unusual emotional force. Reports of mystical and self-transcendent experience are
+real objects of psychological study \citep{james1902varieties,
+yaden2017selftranscendent}. This paper does not need to settle whether an independent
+astral substance exists. It asks the operational question: does the experience change
+the person who returns to action?
+
+That question separates productive imagination from dissociation. A productive image
+increases contact with reality. It clarifies a target, reveals a conflict, rehearses a
+response, or makes a value actionable. An unproductive image becomes a substitute for
+evidence. The difference is not vividness. The difference is whether the image enters
+the full loop of embodiment, action, and assay.
+
+The relation among realms is asymmetric. A material condition can alter embodiment:
+sleep loss changes attention, and an unsafe room changes action readiness. Embodiment
+can alter which forms are available: panic narrows imagination, while skill reveals
+possibilities a novice cannot yet see. An imaginal form can alter embodiment by
+changing attention, expectation, and preparation. The realms continuously constrain
+and update one another.
+
+The word \emph{descent} is therefore appropriate when used precisely. A form descends
+from imagination into matter as it acquires more constraints. An idea has many possible
+expressions. A plan excludes some of them. A practiced policy excludes more. A
+completed artifact is one expression fixed in material. Materialization is not a fall
+from a superior unreal world. It is the progressive determination of possibility into
+observable form.
+
+% ============================================================
+\section{The Human Vessel}
+% ============================================================
+
+The human body is not a container carrying a separate mind. It is part of the
+intelligence that must perform the work. Neurons use electrical and chemical signaling.
+Cells maintain membrane potentials. Tissues communicate through chemical, mechanical,
+and bioelectric channels. Bioelectric patterns participate in development,
+regeneration, and large-scale anatomical organization
+\citep{levin2021bioelectric,durant2019planarian}. The body is therefore an
+electrochemical information-processing organism.
+
+That statement is powerful without being inflated. The body is not a digital computer
+with one agreed global bit rate. A membrane voltage is not a thought, and a measurable
+field is not automatically a semantic broadcast. Estimates of human information
+throughput depend on what is being counted, from cellular signaling to consciously
+reportable behavior \citep{kandel2021principles,zheng2025bits,sauerbrei2025bits}.
+Precision strengthens the thesis because the genuine biology is already remarkable.
+
+\subsection*{Attention, rehearsal, and expectation}
+
+An imaginal form enters the vessel through known mechanisms. First, it changes
+relevance. No nervous system can process every available signal. A clearly represented
+goal changes which cues are noticed, remembered, and retrieved. This is not the
+universe sending a personal sign. It is selective perception working for an active
+model.
+
+Second, imagery can rehearse action-relevant systems. Kinesthetic imagery training has
+been associated with changes in neural signals and increased strength
+\citep{yao2013imagery}. The careful conclusion is that imagery can prepare part of the
+controller used in action. It does not replace physical training. Effective
+visualization therefore includes the process, the obstacle, and the response, not only
+the pleasure of completion.
+
+Third, expectation can become physiology. Placebo research has connected expectation
+to dopamine release in Parkinson's disease and to measurable changes in pain-related
+brain activity \citep{delafuente2001placebo,wager2004placebo}. These findings do not
+show that belief can cure every illness. They establish the narrower and important
+point that meaning can become a biological input.
+
+Fourth, implementation intentions convert general desire into executable policy. An
+if-then rule specifies a cue and a response: \emph{if situation \(X\) occurs, I will
+perform action \(A\)}. Research on implementation intentions shows why a prepared
+response can outperform intention alone \citep{sheeran2005implementation}. The image
+supplies orientation; the rule supplies operational grammar.
+
+\subsection*{State changes possibility}
+
+Sleep deprivation impairs decisions that require updating from feedback
+\citep{whitney2015sleep}. Circadian misalignment changes performance in
+task-dependent ways \citep{chellappa2018circadian}. Metabolic state can alter
+decisions under risk \citep{symmonds2010metabolic}. Mild dehydration has been
+associated with changes in mood and cognition
+\citep{ganio2011dehydration,armstrong2012dehydration}. Experimental immune activation
+can change neurobehavioral function \citep{grigoleit2011endotoxin}. These are not
+excuses for every failed choice. They show that the chooser cannot be modeled apart
+from the state in which choosing occurs.
+
+Food is part of this state architecture. In a randomized inpatient trial, an
+ultra-processed diet caused higher energy intake and weight gain than a minimally
+processed diet offered under matched conditions \citep{hall2019ultraprocessed}.
+Interventions involving the gut microbiome have produced changes in reported emotional
+and neural measures, although results are specific to the intervention and population
+\citep{bagga2018probiotics}. Nutrition influences agency through metabolic, endocrine,
+immune, and neural pathways. No quantum explanation is needed.
+
+The body is the alchemical vessel because it determines which intentions can survive
+contact with a moment. A dream held by an exhausted person and the same dream held by
+a rested, trained, and regulated person are the same as representations but different
+as causes. The biology does not dictate the destiny. It changes the policies that can
+be generated, selected, and executed reliably.
+
+% ============================================================
+\section{The Mathematics of Materialization}
+% ============================================================
+
+Let \(I_t\) denote an imaginal target at time \(t\), \(B_t\) the agent's embodied
+state, \(E_t\) the environment, \(\pi_t\) a policy, and \(W_{t+1}\) the later material
+world state. Let \(\Pset(B_t,E_t)\) be the set of policies available to this agent in
+this state and environment. The materialization operator is:
 
 \begin{equation}
-P(Y\mid V,B,E)
+P(W_{t+1}\mid I_t,B_t,E_t)
 =
-\sum_{\pi\in\Pset(B,E)}
-P\!\left(Y\mid\doop(\pi),B,E\right)
-P(\pi\mid V,B,E).
-\label{eq:operator}
+\sum_{\pi\in\Pset(B_t,E_t)}
+P\!\left(W_{t+1}\mid\doop(\pi),B_t,E_t\right)
+P(\pi\mid I_t,B_t,E_t).
+\label{eq:materialization}
 \end{equation}
 
-The first term inside the sum asks what happens if policy \(\pi\) is executed. The
-second asks how likely the agent is to select that policy given the vision, body, and
-environment. Visualization has power when it changes the weights assigned to useful
-policies. Biology and environment determine which policies are available and whether
-they can be executed reliably.
+The first term inside the sum describes what follows if policy \(\pi\) is executed.
+The second describes how the imaginal form, embodied state, and environment weight the
+selection of that policy. Consciousness changes the material future when it changes
+these weights, the available policy set, the quality of execution, or the interpretation
+of feedback.
 
-\subsection{The mediation theorem}
+\subsection*{Mediation}
 
 \begin{theorem}[Mediation theorem]
-Assume the ordinary causal graph
+Fix \(B_t\) and \(E_t\). If two imaginal states \(i_1\) and \(i_2\) produce the same
+policy distribution,
 \[
-V \longrightarrow \pi \longrightarrow Y,
+P(\pi\mid I_t=i_1,B_t,E_t)=P(\pi\mid I_t=i_2,B_t,E_t)
 \]
-with \(B\) and \(E\) fixed. If
+for every \(\pi\), then they produce the same distribution of later material states:
 \[
-P(\pi\mid V=v_1,B,E)=P(\pi\mid V=v_2,B,E)
-\]
-for every policy \(\pi\), then
-\[
-P(Y\mid V=v_1,B,E)=P(Y\mid V=v_2,B,E).
+P(W_{t+1}\mid I_t=i_1,B_t,E_t)
+=
+P(W_{t+1}\mid I_t=i_2,B_t,E_t).
 \]
 \end{theorem}
 
 \begin{proof}
-Apply Equation~\ref{eq:operator} to \(v_1\) and \(v_2\). The interventional outcome
-term \(P(Y\mid\doop(\pi),B,E)\) is the same in both sums because the policy, body, and
-environment are fixed. By assumption, the policy weight is also the same for every
-\(\pi\). The sums are therefore equal.
+Apply Equation~\ref{eq:materialization} to \(i_1\) and \(i_2\). The interventional
+outcome term is unchanged because policy, body, and environment are fixed. The policy
+weights are equal by assumption. The sums are therefore equal.
 \end{proof}
 
-The theorem says something practical and something scientific. Practically, an image
-that never changes attention, preparation, choice, or action should not be expected to
-change an external result. Scientifically, any reproducible effect on a shielded
-external system after every ordinary mediator is fixed would falsify this graph and
-require a new causal edge. The theorem does not declare such an edge impossible. It
-states what evidence would be needed.
+The theorem states the boundary of ordinary manifestation. If visualization changes
+neither attention, physiology, policy, action, nor any other mediator, the model
+predicts no external effect. A reliable effect on a shielded external system after
+every ordinary mediator was controlled would falsify the graph and require a new edge.
+The theory does not define such evidence away. It states what evidence must show.
 
-\subsection{The reachable-future theorem}
+\subsection*{Reachable futures}
 
-For reliability threshold \(\rho\), let \(\Pset_\rho(B,E)\) be the set of policies the
-agent can execute with at least reliability \(\rho\). For outcome threshold
-\(\epsilon\), define the reachable-future set:
-
+For reliability threshold \(\rho\), let \(\Pset_\rho(B,E)\) contain the policies the
+agent can execute with reliability at least \(\rho\). For outcome threshold
+\(\epsilon\), define:
 \begin{equation}
 \Aset_{\epsilon,\rho}(B,E)
 =
 \left\{
-y:
-\exists \pi\in\Pset_\rho(B,E)
-\text{ with }
-P\!\left(y\mid\doop(\pi),B,E\right)\ge\epsilon
+w:\exists\pi\in\Pset_\rho(B,E)
+\text{ such that }
+P\!\left(w\mid\doop(\pi),B,E\right)\ge\epsilon
 \right\}.
 \label{eq:reachable}
 \end{equation}
 
 \begin{theorem}[Reachable-future theorem]
-Let \(B^+\) and \(B^-\) be two embodied states in the same environment. If
+Let \(B^+\) and \(B^-\) be embodied states in the same environment. If
 \[
 \Pset_\rho(B^-,E)\subseteq\Pset_\rho(B^+,E),
 \]
-and every outcome reachable under \(B^-\) remains at least as likely under the same
+and each outcome reachable under \(B^-\) remains at least as likely under the same
 policy in \(B^+\), then
 \[
 \Aset_{\epsilon,\rho}(B^-,E)
 \subseteq
 \Aset_{\epsilon,\rho}(B^+,E).
 \]
-If at least one additional policy in \(B^+\) reaches an outcome not reachable in
-\(B^-\), the inclusion is strict.
+The inclusion is strict if an additional reliable policy in \(B^+\) reaches a new
+qualifying outcome.
 \end{theorem}
 
 \begin{proof}
-Take any \(y\in\Aset_{\epsilon,\rho}(B^-,E)\). By definition, some
-\(\pi\in\Pset_\rho(B^-,E)\) reaches \(y\) with probability at least \(\epsilon\).
-Set inclusion makes the same policy available in \(B^+\), and the probability
-assumption preserves the threshold. Thus \(y\in\Aset_{\epsilon,\rho}(B^+,E)\).
-If an additional policy reaches a new qualifying outcome, that outcome belongs only
-to the second set.
+Take any \(w\in\Aset_{\epsilon,\rho}(B^-,E)\). By definition, some policy in
+\(\Pset_\rho(B^-,E)\) reaches \(w\) at the required probability. Set inclusion makes
+the same policy available in \(B^+\), and the probability assumption preserves the
+threshold. Thus \(w\in\Aset_{\epsilon,\rho}(B^+,E)\). An additional policy that reaches
+a new qualifying outcome makes the inclusion strict.
 \end{proof}
 
-The result formalizes a familiar experience. When exhaustion removes the policy
-\emph{have the difficult conversation calmly}, a relational future disappears from
-the reachable set for that moment. When training adds the policy \emph{build and
-deploy the prototype}, futures that were once imaginary become reachable. Improved
-state does not guarantee an outcome. It changes the set of outcomes for which there
-is a credible path.
+The theorem formalizes why embodiment changes reality access. If exhaustion removes
+the reliable policy \emph{have the difficult conversation calmly}, one relational
+future disappears for that moment. If training adds the reliable policy \emph{build
+and deploy the prototype}, a previously imaginary future becomes reachable. Capacity
+does not guarantee an outcome. It changes the set of outcomes with credible paths.
 
-\subsection{The repetition theorem}
+\subsection*{Identity convergence}
+
+Let \(Z_t\) be a vector representing enacted identity at time \(t\), and let \(U_t\)
+represent the identity evidence supplied by behavior at that time. Consider the update
+rule
+\begin{equation}
+Z_{t+1}=(1-\alpha)Z_t+\alpha U_t,
+\qquad 0<\alpha\leq 1.
+\label{eq:identity-update}
+\end{equation}
+The rule is a model, not a proposed biological law. It captures the idea that people
+partly infer who they are from what they repeatedly do
+\citep{bem1972selfperception,oyserman2009identity}.
+
+\begin{theorem}[Identity-convergence theorem]
+If an agent repeatedly supplies identity-consistent evidence \(U_t=z^\star\), then
+after \(k\) updates,
+\[
+Z_{t+k}=z^\star+(1-\alpha)^k(Z_t-z^\star),
+\]
+and therefore \(Z_{t+k}\to z^\star\) as \(k\to\infty\).
+\end{theorem}
+
+\begin{proof}
+Substitute \(U_t=z^\star\) into Equation~\ref{eq:identity-update} and subtract
+\(z^\star\) from both sides:
+\[
+Z_{t+1}-z^\star=(1-\alpha)(Z_t-z^\star).
+\]
+Iterating \(k\) times gives the stated expression. Since \(0\leq 1-\alpha<1\), the
+remaining difference converges to zero.
+\end{proof}
+
+This is the formal meaning of \emph{play the part until you become the part}. Costume
+alone does not cause convergence. Repeated identity-consistent evidence does. A person
+becomes a writer by writing, a builder by building, a leader by taking responsibility,
+and a contemplative by returning attention to practice. The internal identity and the
+external record begin to agree.
+
+\subsection*{Directed repetition}
 
 \begin{theorem}[Repetition theorem]
-Suppose an agent makes \(n\) conditionally independent attempts at a target, with
-success probabilities \(p_1,\ldots,p_n\). The probability of at least one success is
+Suppose attempt \(t\) succeeds with conditional probability
 \[
-P(\text{success by }n)
-=
-1-\prod_{t=1}^{n}(1-p_t).
+p_t=P(\text{success at }t\mid\text{all previous attempts failed}).
 \]
-For any attempt with \(0<p_t<1\), adding another attempt with positive probability or
-increasing any \(p_t\) strictly increases the cumulative probability.
+Then the probability of at least one success by attempt \(n\) is
+\[
+P(\text{success by }n)=1-\prod_{t=1}^{n}(1-p_t).
+\]
+Adding an attempt with \(p_{n+1}>0\), or increasing any \(p_t\), strictly increases
+the cumulative probability.
 \end{theorem}
 
 \begin{proof}
-The probability that every attempt fails is the product
-\(\prod_{t=1}^{n}(1-p_t)\). The complementary event is at least one success. Adding a
-factor \(1-p_{n+1}<1\) makes the failure product smaller. Increasing a \(p_t\) also
-makes its failure factor smaller. In either case the complement becomes larger.
+By the chain rule, the probability that every attempt fails is
+\(\prod_{t=1}^{n}(1-p_t)\). Its complement is at least one success. A new factor below
+one, or a reduction in any existing failure factor, reduces total failure probability.
 \end{proof}
 
-Real attempts are not perfectly independent, but the logic survives in richer
-models. A clear vision can increase the number of directed attempts, improve their
-quality, and make feedback useful. Small changes then accumulate. What looks
-retrospectively like a sudden manifestation is often the visible threshold of a long
-sequence.
+The conditional form does not require independent attempts. Learning can change each
+\(p_t\). A clear form can increase the number of directed attempts. Training can
+increase their quality. Feedback can improve later policies. What appears suddenly as
+manifestation is often the visible threshold of an accumulating process.
+
+% ============================================================
+\section{Solve et Coagula}
+% ============================================================
+
+The alchemical maxim \emph{solve et coagula} means dissolve and recombine. It provides
+a compact grammar for transformation. The inherited pattern must become changeable
+before a chosen pattern can become stable.
+
+\emph{Solve} is the loosening of automatic structure. A person notices an inherited
+identity, interrupts a habit, leaves an environment, questions a belief, or permits an
+emotion to become conscious. The operation creates degrees of freedom. Without it,
+new intention is poured into an old mold.
+
+\emph{Coagula} is the stabilization of a selected form. A person rehearses a policy,
+changes a room, signs an agreement, builds a schedule, develops a skill, or creates an
+artifact. The operation gives the new pattern material persistence. Without it,
+insight evaporates.
 
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
-  plane/.style={
+  stage/.style={
     rounded corners=3pt,
+    draw=darkblue,
     very thick,
-    minimum width=11.6cm,
-    minimum height=1.35cm,
+    minimum height=12mm,
+    text width=3.35cm,
     align=center
   },
   arrow/.style={-{Latex[length=2.6mm]}, thick, darkblue}
 ]
-\node[plane, draw=darkblue, fill=lightblue] (mental)
-  {\textbf{Mental plane}\\target image, meaning, prediction, identity};
-\node[plane, draw=darkblue, fill=palegreen, below=7mm of mental] (embodied)
-  {\textbf{Embodied plane}\\attention, expectation, physiology, skill, policy};
-\node[plane, draw=darkblue, fill=paleyellow, below=7mm of embodied] (physical)
-  {\textbf{Physical plane}\\action, artifact, relationship, institution, world state};
-\draw[arrow] (mental) -- node[right, text=darkgray]{\small selection and preparation} (embodied);
-\draw[arrow] (embodied) -- node[right, text=darkgray]{\small action} (physical);
-\draw[arrow] (physical.west) -- ++(-0.65,0) |- node[pos=0.22, left, text=darkgray]
-  {\small feedback} (mental.west);
+\node[stage, fill=palegold] (solve) {\textbf{SOLVE}\\interrupt and release\\the old pattern};
+\node[stage, fill=lightblue, right=8mm of solve] (form) {\textbf{FORM}\\select and rehearse\\the desired pattern};
+\node[stage, fill=palegreen, right=8mm of form] (coagula) {\textbf{COAGULA}\\enact and stabilize\\the pattern in matter};
+\draw[arrow] (solve) -- (form);
+\draw[arrow] (form) -- (coagula);
+\draw[arrow] (coagula.south) -- ++(0,-0.75) -|
+  node[pos=0.27, below, text=darkgray]{\small assay the result and begin again}
+  (solve.south);
 \end{tikzpicture}
-\caption{The three planes are not competing universes. They are stages in one causal
-process. A private model becomes physically consequential through an embodied agent.}
-\label{fig:planes}
+\caption{Solve et coagula as an operational cycle. Dissolution creates freedom;
+recombination gives the selected form persistence.}
+\label{fig:solve-coagula}
 \end{figure}
 
-% ============================================================
-\section{How Vision Enters the Body}
-% ============================================================
+The cycle explains why positive affirmation often fails. If the old context, cues,
+skills, rewards, and repeated actions remain untouched, the prior form keeps receiving
+material reinforcement. Words naming a new identity compete against a world proving
+the old one. Solve changes the constraint. Coagula makes the new claim true in
+observable increments.
 
-The formal model leaves an empirical question: how can a representation change policy
-weights? Four mechanisms are well supported.
+The cycle also prevents endless dissolution. Insight, catharsis, altered states, and
+symbolic death can become another avoidance if they never produce form. Alchemy is
+completed by embodiment. The test is not how intense the release felt. The test is
+what pattern can now be sustained.
 
-\paragraph{Attention.}
-A goal changes the relevance map through which the world is sampled. Once a target is
-represented clearly, cues related to it become easier to notice, encode, and retrieve.
-This is not the universe sending signs. It is selective perception serving an active
-model. Because no person can process every available signal, relevance is a genuine
-causal resource.
-
-\paragraph{Rehearsal.}
-Mental imagery recruits parts of the systems used in perception and action. In one
-study, kinesthetic imagery training changed brain signals and increased strength
-\citep{yao2013imagery}. The careful inference is not that imagination replaces
-practice. It is that simulation can prepare the controller that practice uses.
-Effective visualization therefore includes process, obstacles, and response, not only
-the pleasure of completion.
-
-\paragraph{Expectation.}
-Expectations can alter internal physiology. Placebo research has connected expectation
-to dopamine release in Parkinson's disease and to measurable changes in pain-related
-brain activity \citep{delafuente2001placebo,wager2004placebo}. These results do not
-show that belief can cure any disease. They do show that meaning is not outside
-biology. A representation can become a physiological input.
-
-\paragraph{Implementation.}
-A goal becomes much more executable when translated into an if-then rule: \emph{if
-situation \(X\) occurs, I will perform action \(A\)}. Implementation-intention
-research shows why desire alone is weaker than a prepared policy
-\citep{sheeran2005implementation}. Visualization supplies direction; implementation
-intentions supply grammar.
-
-The same logic applies to identity. Repeatedly imagining oneself as a builder, athlete,
-parent, leader, or contemplative can influence which actions feel consistent with the
-self-model. That effect can be constructive or delusional. The difference is
-feedback. A useful identity produces observable evidence and updates when reality
-disagrees.
+At larger scales, the same grammar builds institutions. A founder dissolves an
+assumption about how a service must work, models another arrangement, recruits people
+into the form, encodes it in software and contracts, and measures whether the new
+institution performs. Social reality is material reality organized partly by shared
+symbols. A contract, company, currency, and role exist because representations are
+coordinated and repeatedly enacted, yet their consequences are physically real.
 
 % ============================================================
-\section{The Body Changes What Is Possible}
+\section{Inner Alchemy}
 % ============================================================
 
-The human body is not merely a vehicle carrying an independent mind. It is part of the
-decision system. Neurons signal electrically; cells maintain membrane potentials;
-tissues coordinate through chemical, mechanical, and bioelectric channels. Work on
-development and regeneration shows that bioelectric patterns participate in large-scale
-anatomical organization \citep{levin2021bioelectric,durant2019planarian}. This is
-strong evidence for biological information processing. It is not, by itself, evidence
-that the body receives semantic commands from a cosmic field.
+Traditional systems described human transformation before psychology had its current
+vocabulary. Their symbols should neither be flattened into laboratory claims nor
+discarded as meaningless. They can be read as maps of the Great Work at different
+levels.
 
-Several ordinary state variables change the reachable policy set.
+\subsection*{Hermetic and psychological alchemy}
 
-\paragraph{Sleep and timing.}
-Sleep deprivation impairs decisions that require updating from feedback
-\citep{whitney2015sleep}. Circadian misalignment impairs performance in
-task-dependent ways \citep{chellappa2018circadian}. A person may still hold the same
-dream while losing the ability to learn from the day's evidence. Rest is therefore not
-separate from manifestation. It protects the update step.
+Hermetic texts place human knowledge within a living cosmos and join transformation of
+the knower to knowledge of the whole \citep{copenhaver1992hermetica}. Later alchemical
+imagery describes separation, purification, conjunction, death, and rebirth. Jung read
+this imagery as projection and discovery of psychic transformation
+\citep{jung1968alchemy}. In the language developed here, the material and psychological
+readings share a structure: an initial form is broken apart, its elements are
+reorganized, and a more integrated form is stabilized.
 
-\paragraph{Energy, hydration, and inflammation.}
-Metabolic state can alter decisions under risk \citep{symmonds2010metabolic}. Mild
-dehydration has been associated with changes in cognition and mood
-\citep{ganio2011dehydration,armstrong2012dehydration}. Experimental immune activation
-can change neurobehavioral function \citep{grigoleit2011endotoxin}. These findings do
-not mean every bad choice is caused by a biomarker. They show why state cannot be
-excluded from a theory of agency.
+The gold symbolizes incorruptible value, but symbolic gold does not excuse the work.
+An integrated self must become visible as integrated conduct. If the practitioner
+claims wholeness while remaining governed by the same compulsions, the assay has
+failed. Inner alchemy is accountable to the life it produces.
 
-\paragraph{Food and the gut-brain axis.}
-In a randomized inpatient trial, ultra-processed diets caused higher calorie intake
-and weight gain than minimally processed diets offered under matched conditions
-\citep{hall2019ultraprocessed}. Microbiome interventions can affect reported emotional
-and neural measures, although results remain intervention-specific
-\citep{bagga2018probiotics}. Nutrition influences capacity through ordinary metabolic,
-endocrine, immune, and neural pathways. No quantum-field explanation is required.
+\subsection*{Kundalini and sacred secretion}
 
-\paragraph{Attention environments.}
-Phone notifications impose measurable attentional costs even when the user does not
-respond \citep{stothart2015notifications,upshaw2022notifications}. Habits are strongly
-coupled to stable contexts, and context change can disrupt them \citep{wood2005habits}.
-Recommendation systems are explicitly optimized to select what a user sees next
-\citep{covington2016youtube}. Processed food and digital distraction do not prove a
-single conspiracy to suppress divinity. They do reveal incentive systems that profit
-when short-term consumption wins against long-term intention.
+Kundalini traditions describe concentrated practice, ascending energy, centers of
+transformation, and altered consciousness
+\citep{buhnemann2011kundalini,white1996alchemicalbody}. Contemporary reports describe
+powerful experiences and lasting effects, although much of the evidence is
+phenomenological \citep{woollacott2021kundalini}. These traditions can be read as an
+inner alchemical map: dormant potential is activated, disciplined, raised, integrated,
+and expressed as a transformed mode of being.
 
-This is the grounded meaning of \emph{frequency} and \emph{coherence}. Frequency can
-refer literally to oscillation only when a rate is measured. In personal practice it
-is better used as a metaphor for a stable pattern of attention, emotion, physiology,
-and conduct. Coherence is alignment among goal, state, policy, and action. When those
-parts conflict, energy is spent without directed change. When they align, the same
-person becomes a more reliable cause.
+The sacred-secretion thesis extends the same pattern through a Christian and bodily
+symbolism of descent, preservation, ascent, death, and rebirth
+\citep{edgar2026humandivinity}. As comparative symbolism, the synthesis is coherent.
+It links the alchemical vessel, the spinal axis, anointing, resurrection, and the birth
+of a higher identity. It also gives practice a rhythm: receive, conserve, transform,
+and embody.
+
+The anatomical claim must be stated separately. Known cerebrospinal-fluid and pineal
+physiology does not establish one universal monthly substance that descends from the
+brain to the sacrum and returns \citep{hladky2014csf,nichols2018pineal}. Mammalian
+brains contain enzymatic machinery related to DMT biosynthesis, but that finding does
+not establish the popular cycle or its theological meaning \citep{dean2019dmt}. A
+symbolic map can organize experience and conduct without being mislabeled as settled
+anatomy.
+
+\subsection*{Theosis and Christ consciousness}
+
+Christian theosis concerns participation in divine life and transformation into
+likeness with God \citep{athanasius2011incarnation,papanikolaou2020theosis}. In the
+present theory, the image of divine humanity functions as the highest regulative form.
+It reorganizes attention, sacrifice, forgiveness, courage, love, and service.
+``Christ consciousness'' is a modern name for this orientation when it is treated as
+a lived identity rather than a laboratory variable.
+
+The phrase \emph{we are God} can then be handled with care. It need not mean that an
+individual ego controls every event. It can mean that conscious beings participate in
+creation: they receive form, exercise choice, generate value, and become responsible
+for what passes through them into the world. Theosis adds an ethical criterion. Power
+without truth, love, and service is not divinization. It is inflation.
+
+Alchemy, kundalini, sacred secretion, and theosis are not historically identical.
+Their physiology and theology should not be merged by assertion. Their functional
+pattern nevertheless converges:
+\begin{equation}
+\text{higher form}
+\rightarrow
+\text{disciplined vessel}
+\rightarrow
+\text{transformed identity}
+\rightarrow
+\text{transformed conduct}.
+\label{eq:inner-alchemy}
+\end{equation}
+Science can test the mediators. Symbol and theology address the meaning of the work.
 
 % ============================================================
-\section{Evidence and Boundaries}
+\section{Technological Alchemy}
 % ============================================================
 
-The paper uses four evidence levels. \emph{Established} means replicated causal
-evidence or mature physical theory. \emph{Supported} means convergent evidence with
-meaningful limits. \emph{Plausible} means a testable extension. \emph{Interpretive}
-means philosophical, phenomenological, or theological meaning rather than a laboratory
-result. Keeping these levels separate makes the synthesis stronger.
+Modern institutions often translate ancient operations into technical language. They
+replace initiation with protocol, ritual sound with engineered audio, contemplation
+with state induction, and spiritual maps with diagrams. Two supplied primary records
+show how claims about consciousness and fields entered formal technical channels.
 
-\subsection{DNA, fields, and quantum language}
+\subsection*{Gateway as an engineered transformation system}
 
-DNA is genetic material, a regulated polymer, and a medium through which charge
-transport can occur \citep{crick1970central,virolainen2023geneenvironment,
-zwang2018dnacharge}. Calling it either a code \emph{or} an antenna creates a false
-choice. It has several physical and informational properties. The specific claim that
-ordinary words semantically program DNA has not been established by blinded,
-independent, multilaboratory replication. Even literature sympathetic to a DNA
-``phantom effect'' notes the replication problem
-\citep{gariaev2011wavegenetics,brill2012phantom}.
+The 1983 Department of the Army memorandum \emph{Analysis and Assessment of Gateway
+Process} was written by Wayne M. McDonnell and later released in the CIA Reading Room
+\citep{mcdonnell1983gateway}. It is frequently called a CIA report, but the document
+identifies an Army origin. CIA custody establishes archive provenance, not CIA
+authorship.
 
-The heart produces electrical and magnetic signals. Magnetocardiography measures
-fields in the picotesla range \citep{roth2024magnetocardiogram}. Measurement does not
-create a privileged three-foot boundary or demonstrate that the field broadcasts
-intentions into external reality. Similarly, action potentials involve voltage
-changes, but quoting one membrane voltage does not make the body a computer with a
-single global bit rate. Published estimates depend on what level is counted, and
-recent authors have disputed a proposed ten-bit-per-second behavioral figure
-\citep{kandel2021principles,zheng2025bits,sauerbrei2025bits}.
+The memorandum analyzes the Monroe Institute's Gateway system through hypnosis,
+biofeedback, transcendental meditation, kundalini, Hemi-Sync audio, the
+frequency-following response, visualization, and what it calls patterning. It describes
+biofeedback as using a desired result, objective response data, repeated correction,
+and reinforcement. It describes Hemi-Sync as a method intended to coordinate the
+hemispheres and uses coherence metaphors to explain focused consciousness. Its
+practical sequence is recognizably alchemical:
+\[
+\text{induce state}
+\rightarrow
+\text{focus form}
+\rightarrow
+\text{rehearse pattern}
+\rightarrow
+\text{receive feedback}
+\rightarrow
+\text{stabilize capacity}.
+\]
 
-Quantum tunneling occurs in enzyme reactions, and quantum coherence has been studied
-in photosynthetic systems \citep{cha1989tunneling,panitchayangkoon2010coherence}.
-There is active disagreement about which forms of coherence biology actually uses
-\citep{duan2017nolongcoherence}. Quantum-consciousness proposals exist
-\citep{hameroff2014orch}, while decoherence calculations show the scale problem faced
-by simple macroscopic accounts \citep{tegmark2000decoherence}. The many-worlds
-interpretation is an interpretation of quantum mechanics, not a demonstrated method
-for a person to choose a preferred branch \citep{vaidman2022manyworlds}.
+Gateway is therefore legitimately read as technological alchemy. It attempts to
+engineer and accelerate states that older traditions approached through ritual,
+breath, concentration, ascetic discipline, and initiation. It is valuable evidence
+that a formal military organization considered the subject worth analysis and
+proposed further experiments.
 
-\subsection{What the patent and Gateway record show}
+The documentary boundary is equally important. The memorandum combines established
+phenomena, theoretical analogy, and speculative cosmology. Its conclusion recommends
+testing and often reasons conditionally about what would follow if the framework were
+valid. It is not a completed controlled trial of remote viewing, astral travel, or
+direct materialization. Institutional inquiry is not experimental confirmation.
+
+\subsection*{The monitor-field patent}
 
 U.S. Patent 6,506,148 B2, \emph{Nervous System Manipulation by Electromagnetic Fields
 from Monitors}, describes a proposed method using pulsed monitor fields in the
-0.1 to 15 Hz range \citep{loos2003patent}. Its specification relies substantially on
-subject-controlled tuning and subjective responses. A patent grant establishes that
-claims passed the applicable legal examination. The USPTO utility requirement is not
-a blinded clinical-efficacy standard \citep{uspto2026utility}. Separate neuroscience
-does show that visual systems can entrain to video displays under defined conditions
-\citep{williams2004displays}. That supports a narrower mechanism, not every claim in
-the patent.
+0.1--15 Hz range \citep{loos2003patent}. Its specification relies substantially on
+subject-controlled tuning and subjective responses. Separate neuroscience shows that
+visual systems can entrain to video displays under defined conditions
+\citep{williams2004displays}. This makes the broad category of stimulus-linked neural
+response scientifically intelligible.
 
-The 1983 Department of the Army memorandum \emph{Analysis and Assessment of Gateway
-Process}, later released under a CIA archive identifier, is a genuine government
-analysis of the Monroe Institute's Gateway framework \citep{mcdonnell1983gateway}.
-It combines altered-state practice with Bentov, holographic, and quantum language.
-Its conclusion recommends further experiments and describes what might follow
-\emph{if} the method works. The document is good evidence that the subject received
-serious institutional attention. Its own conditional language prevents it from being
-treated as a final report of successful validation.
+A patent grant, however, is a legal event. It establishes the disclosed claim,
+priority, and examination under patent law. The USPTO utility requirement is not a
+blinded clinical-efficacy standard \citep{uspto2026utility}. The patent is strong
+evidence that the method was formally claimed and granted. It is not independent,
+multi-participant replication of every effect described in the specification.
 
-The patent and memorandum are therefore valuable primary records. They show that
-claims about fields and altered consciousness entered formal technical channels.
-They do not replace controlled replication. The exact documents used here are
-archived with the paper so their wording and provenance remain auditable.
+The alchemical relevance is not that the patent proves hidden control. It shows that
+the vessel can be approached as a system whose state is influenced by patterned
+sensory and electromagnetic input. This makes environmental design part of practical
+alchemy. It does not establish that a monitor can insert arbitrary semantic content
+into a person or that all screens are covertly using the claimed method.
 
-\subsection{Compact claim audit}
+\subsection*{DNA, fields, and quantum claims}
 
-\begin{table}[p]
-\centering
-\small
-\caption{What the evidence supports and where it stops.}
-\label{tab:audit}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.23\textwidth}
-  >{\raggedright\arraybackslash}p{0.16\textwidth}
-  >{\raggedright\arraybackslash}X}
-\toprule
-\textbf{Claim} & \textbf{Status} & \textbf{Defensible conclusion} \\
-\midrule
-Cells use bioelectric signals & Established &
-Membrane voltage and bioelectric patterning participate in neural, developmental, and
-regenerative processes. \\
-\addlinespace
-Imagery changes performance & Supported &
-Imagery can rehearse controllers and influence later performance; it does not replace
-physical execution. \\
-\addlinespace
-If-then plans improve action & Supported &
-Implementation intentions convert goals into context-triggered policies. \\
-\addlinespace
-Words directly program DNA & Unsupported &
-DNA responds to physical and biochemical conditions; semantic word effects lack
-independent replication. \\
-\addlinespace
-The heart emits a field & Established &
-The field is measurable; a special consciousness radius or intention broadcast is not
-established. \\
-\addlinespace
-Quantum effects occur in cells & Established &
-Specific molecular effects exist; quantum timeline selection by intention does not
-follow. \\
-\addlinespace
-The patent proves manipulation & Documentary &
-It proves a method was claimed and granted, not that clinical efficacy was replicated. \\
-\addlinespace
-Gateway proves astral travel & Documentary &
-It proves institutional analysis and proposed testing, not conclusive validation. \\
-\addlinespace
-Kundalini describes real experience & Interpretive &
-The tradition and reported experiences are real objects of study; one universal
-physiology is not established. \\
-\addlinespace
-Sacred secretion is monthly anatomy & Unsupported &
-Known cerebrospinal-fluid and pineal physiology do not establish the claimed cycle. \\
-\bottomrule
-\end{tabularx}
-\end{table}
+DNA is genetic material, a regulated polymer, and a medium through which charge
+transport can occur \citep{crick1970central,virolainen2023geneenvironment,
+zwang2018dnacharge}. Calling it either a code or an antenna creates a false choice. It
+has informational, chemical, mechanical, and electrical properties. The stronger
+claim that spoken words semantically reprogram DNA has not been established by
+blinded, independent, multilaboratory replication. Literature sympathetic to a DNA
+``phantom effect'' itself records the replication problem
+\citep{gariaev2011wavegenetics,brill2012phantom}.
+
+The heart produces measurable electrical and magnetic activity.
+Magnetocardiography detects cardiac fields in the picotesla range
+\citep{roth2024magnetocardiogram}. A measurable field is not automatically an
+intention broadcast, and measurement does not establish a privileged three-foot
+consciousness boundary. The disciplined alchemical claim is simpler: cardiac state,
+breathing, arousal, and felt emotion are part of the embodied realm and can influence
+policy.
+
+Quantum tunneling occurs in enzyme reactions, and quantum coherence has been studied
+in photosynthetic systems \citep{cha1989tunneling,panitchayangkoon2010coherence}.
+There is active disagreement about which forms of coherence biology uses
+\citep{duan2017nolongcoherence}. Quantum-consciousness proposals exist
+\citep{hameroff2014orch}, while decoherence calculations identify serious scale
+constraints for simple macroscopic accounts \citep{tegmark2000decoherence}. The
+many-worlds interpretation is an interpretation of quantum mechanics, not a
+demonstrated interface for choosing a desired personal timeline
+\citep{vaidman2022manyworlds}.
+
+Quantum language can remain an analogy for a field of possibilities, but the formal
+theory does not depend on it. A choice already selects one action from many possible
+actions. That selection changes the next state of the world. Human timeline selection
+is causally real at the level of policy and consequence without claiming voluntary
+control over quantum branches.
 
 % ============================================================
-\section{Ancient Maps of Transformation}
+\section{The Counter-Alchemical Environment}
 % ============================================================
 
-Long before causal graphs, traditions described transformation with symbolic
-architectures. They need not be discarded because some modern anatomical claims are
-weak. They can be read at the level where they are strongest.
+If alchemy requires stable attention, embodied capacity, chosen identity, and repeated
+action, then an environment that fragments those capacities is counter-alchemical in
+effect. It dissolves the practitioner without allowing a chosen form to coagulate.
 
-\paragraph{Alchemy.}
-Hermetic and alchemical texts join an image of perfected matter with disciplined
-operations of separation, purification, and recombination
-\citep{copenhaver1992hermetica,jung1968alchemy}. Psychologically, the pattern is clear:
-hold a form, expose the present self to a process, and embody the result. The gold is
-both a material aim and a symbol of integrated being.
+Phone notifications produce measurable attentional costs even when the user does not
+respond \citep{stothart2015notifications,upshaw2022notifications}. Habits are linked
+to recurring contexts, and context changes can disrupt them
+\citep{wood2005habits,wood2016psychology}. Recommendation systems are explicitly
+optimized to decide what a user sees next \citep{covington2016youtube}. The resulting
+environment continuously supplies cues, identities, desires, and emotional frames.
+Attention that is always externally reset cannot hold a form long enough to build it.
 
-\paragraph{Kundalini.}
-Kundalini traditions provide maps of concentrated practice, ascending energy, and
-transformed consciousness \citep{buhnemann2011kundalini,white1996alchemicalbody}.
-Contemporary reports describe powerful experiences and lasting effects, although the
-data are largely phenomenological \citep{woollacott2021kundalini}. The disciplined
-claim is that practices can reorganize experience and identity. The stronger claim of
-one universal hidden anatomy remains open.
+Ultra-processed food, sleep disruption, outrage, pornography, compulsive consumption,
+and endless novelty can all become forms of interference when they repeatedly reduce
+regulation or replace chosen action. The relevant claim is not that one hidden group
+designed every product to suppress human divinity. The documented incentives are
+enough. Systems optimized for engagement, consumption, and short-term revenue can
+profit from behavior that conflicts with a person's long-term intention.
 
-\paragraph{Theosis and Christ consciousness.}
-Christian theosis concerns participation in divine life and transformation into
-likeness with God \citep{athanasius2011incarnation,papanikolaou2020theosis}. In the
-language of this paper, the highest image of the person becomes a regulative model for
-attention, conduct, sacrifice, and love. ``Christ consciousness'' is best treated as
-a modern interpretive label for this transformed orientation, not a laboratory
-measurement.
+The same distinction applies to degeneracy. The term is useful only when defined as a
+loss of ordered capacity: a pattern in which immediate reward repeatedly defeats
+truth, health, responsibility, creation, or care. Moral panic is not a mechanism.
+Repeated cue-driven behavior is. A person becomes whatever pattern receives the most
+consistent enactment and reinforcement.
 
-\paragraph{Sacred secretion.}
-Claims of a universal monthly substance descending from the brain to the sacrum and
-returning to the head are not established by known cerebrospinal-fluid or pineal
-physiology \citep{hladky2014csf,nichols2018pineal}. Mammalian brains can contain
-enzymatic machinery related to DMT biosynthesis, but this does not establish the
-popular cycle or its theological interpretation \citep{dean2019dmt}. A practice can
-remain meaningful without a false anatomical proof.
+This is why default settings matter. A default is a policy selected before reflective
+choice enters. It can be encoded in an application, a kitchen, a workplace, a peer
+group, or a self-story. Defaults conserve energy, but they also reproduce the reality
+of whoever designed them. Practical alchemy begins by asking which forms the current
+environment is already materializing through the person.
 
-Across these traditions, one structure repeats:
+Resistance is concrete. Protect periods without incoming cues. Put the desired tool
+where action begins. Remove the trigger for the competing identity. Make sleep and
+food part of the operating system. Choose relationships that reinforce truth rather
+than performance. Treat information as nutrition. These changes do not withdraw from
+the physical world. They recover the capacity to act within it deliberately.
 
-\begin{equation}
-\text{image}
-\longrightarrow
-\text{discipline}
-\longrightarrow
-\text{transformed identity}
-\longrightarrow
-\text{transformed conduct}.
-\label{eq:tradition}
-\end{equation}
-
-That structure is compatible with the formal model. The spiritual traditions speak
-in symbols about the selection and embodiment of a higher policy. Science can study
-the mediators without exhausting the meaning.
+The traditional language of coherence can be retained if it is defined. Coherence is
+alignment among represented form, embodied state, identity, policy, and conduct.
+``Frequency'' is literal only when a rate is measured; in personal practice it is
+better treated as a metaphor for a repeated pattern. The operative variable is not a
+vague vibration. It is whether the same organizing form persists across thought,
+body, choice, and action.
 
 % ============================================================
-\section{A Practical Materialization Protocol}
+\section{The Great Work}
 % ============================================================
 
-The theory becomes useful only when it changes practice. The following protocol is a
-direct translation of the causal model.
+The Great Work is the complete practice of materialization. It turns the theory into
+a repeatable discipline.
 
-\paragraph{1. Specify the physical target.}
-State what will be observable if the vision becomes real. ``Become successful'' is
-not yet a target. ``Publish the manuscript, place it in the portfolio, and obtain
-three qualified reviews'' is. A physical criterion prevents feeling from being
-mistaken for completion.
+\paragraph{1. Name the form.}
+State the desired reality as an observable condition. ``Become successful'' is not
+yet a form. ``Complete the manuscript, publish the repository, place the PDF in the
+portfolio, and obtain independent review'' is. A physical criterion prevents a feeling
+of completion from replacing completion.
 
-\paragraph{2. Visualize the process and the identity.}
+\paragraph{2. Assay the present reality.}
+Record the current state without shame or inflation. Identify the existing evidence,
+skills, resources, constraints, habits, and missing conditions. Alchemy begins with
+prima materia, not with denial. A target becomes useful when the distance from the
+present can be described.
+
+\paragraph{3. Solve the inherited pattern.}
+Find the cue, identity, belief, relationship, or environment that reliably reproduces
+the unwanted form. Interrupt it at its point of operation. Reduce friction only for
+the chosen pattern. Dissolution should create a specific degree of freedom.
+
+\paragraph{4. Visualize outcome, process, and identity.}
 Represent the finished state vividly, then rehearse the process that creates it.
-Include the difficult email, the training session, the rejection, the recovery, and
-the next attempt. Imagine the kind of person who performs those actions reliably.
-Outcome imagery gives direction; process imagery prepares policy.
+Include the difficult conversation, the repetition, the rejection, the recovery, and
+the next attempt. Imagine from the first-person position of the one who performs those
+actions. Outcome imagery gives direction. Process imagery prepares the controller.
+Identity imagery gives the action personal meaning.
 
-\paragraph{3. Convert vision into implementation intentions.}
-Write if-then rules for the moments that matter: \emph{if it is 7:00 a.m., I open the
-manuscript before messages}; \emph{if I receive a rejection, I record the reason and
-send the next submission within twenty-four hours}. The rule moves choice from a
-future depleted state into a present reflective state.
+\paragraph{5. Encode the policy.}
+Translate the image into an if-then rule for the decisive moment:
+\emph{if it is 7:00 a.m., I open the manuscript before messages}; \emph{if a
+submission is rejected, I record the reason and make the next submission within
+twenty-four hours}. This moves choice from a future depleted state into a present
+reflective state.
 
-\paragraph{4. Prepare the body.}
-Protect sleep, circadian regularity, hydration, adequate nutrition, movement, and
-recovery. Seek clinical care when symptoms require it. This is not wellness decoration.
-It is maintenance of the system that must execute the policy.
+\paragraph{6. Prepare the vessel.}
+Protect sleep, regular timing, adequate nutrition, hydration, movement, and recovery.
+Seek clinical care when symptoms require it. Use contemplative practice to notice
+automaticity and stabilize attention. Meditation research supports effects on selected
+measures of regulation, default-mode activity, and, in specific settings,
+transcriptional response
+\citep{brewer2011meditation,vago2012sart,black2013meditation}. None of this guarantees
+an external result. It prepares the agent who must meet the next choice.
 
-\paragraph{5. Design the environment.}
-Remove cues that trigger the competing identity. Disable unnecessary notifications,
-place tools where action begins, reduce friction for desired behavior, and add social
-commitments where they help. Willpower is one variable; environment changes the policy
-distribution before willpower is tested.
+\paragraph{7. Enact and coagulate.}
+Create a physical trace in every cycle: a page, call, prototype, application, workout,
+conversation, contract, or transfer of resources. Make the new reality easier to
+repeat. Schedule it, automate it, publish it, teach it, or place it in a structure that
+survives mood. Evidence tells both the person and the world that the identity is no
+longer merely imagined.
 
-\paragraph{6. Act and produce evidence.}
-Create a physical trace each cycle: a page, call, prototype, application, workout,
-conversation, or transfer of resources. Evidence tells the nervous system that the
-identity is no longer imaginary. It also exposes the plan to the world, where
-correction becomes possible.
+\paragraph{8. Assay, learn, and repeat.}
+Compare the result with the target. Keep the form stable enough to guide action and
+flexible enough to learn. Update the policy, not merely the affirmation. A failed
+attempt is information if it changes the next attempt. Repetition without assay is
+compulsion. Repetition with assay is craft.
 
-\paragraph{7. Measure, learn, and repeat.}
-Compare the result with the target. Keep the vision stable enough to guide action and
-flexible enough to learn. Update the policy, not merely the affirmation. Repetition
-then improves both the quality and number of attempts, which is the mechanism in the
-repetition theorem.
+The practice can be summarized as:
+\begin{equation}
+\boxed{
+\text{clear form}
+\times
+\text{capable vessel}
+\times
+\text{effective policy}
+\times
+\text{repetition}
+\times
+\text{feedback}
+}
+\label{eq:great-work}
+\end{equation}
+The multiplication sign is conceptual. If any term approaches zero, materialization
+weakens. The form can be vivid while the policy is absent. The policy can be sound
+while the vessel cannot execute it. Repetition can be intense while feedback is
+ignored. The Work aligns all five.
 
-Contemplative practice can support several steps. Meditation has been associated with
-differences in default-mode activity, self-regulation, and, in some contexts,
-transcriptional measures \citep{brewer2011meditation,vago2012sart,black2013meditation}.
-The responsible conclusion is not that meditation guarantees external outcomes. It
-can reduce automaticity, stabilize attention, and change the agent who meets the next
-choice.
-
-The protocol is intentionally ordinary in its mechanics and extraordinary in its
-implication. A reality that does not yet exist can organize present matter through a
-living person. The future reaches backward as information in a model; the person
-carries that information forward as action.
+This protocol explains why manifestation can feel synchronistic without requiring
+that every coincidence was externally arranged. A held form changes what is noticed,
+which people are approached, which risks are tolerated, which skills are practiced,
+and how quickly an opportunity is recognized. The environment then responds to a
+different pattern of action. Some events remain chance. Others are the delayed return
+of causes the practitioner no longer remembers initiating.
 
 % ============================================================
-\section{Predictions and Conclusion}
+\section{Become the Part}
 % ============================================================
 
-A theory earns credibility by risking failure. The following predictions separate the
-model from unfalsifiable affirmation.
+The final operation is identity. A person can perform a role briefly through force,
+but sustained materialization requires the role to become a stable source of policy.
+This is not pretending that evidence already exists. It is generating the evidence
+from which a new self can truthfully be inferred.
+
+To ``act as if'' responsibly means to enact the virtues and policies of the desired
+identity now, within present constraints. The future founder can make one accountable
+decision. The future athlete can complete today's training. The future author can
+produce the page. Each action is small compared with the completed identity, but it is
+made of the same form. The part is first rehearsed, then evidenced, then inhabited.
+
+Identity-based motivation research argues that accessible identities carry readiness
+for identity-congruent action and ways of interpreting difficulty
+\citep{oyserman2009identity}. Habit research shows how repeated responses in recurring
+contexts become efficient defaults \citep{wood2016psychology}. Self-perception theory
+explains why behavior can also become information about the self
+\citep{bem1972selfperception}. Together they provide a grounded mechanism for the
+ancient intuition: what is repeatedly enacted enters character.
+
+The process is reciprocal:
+\begin{equation}
+\text{identity}\rightarrow\text{action}\rightarrow\text{evidence}
+\rightarrow\text{updated identity}\rightarrow\text{new action}.
+\label{eq:identity-loop}
+\end{equation}
+This loop can build courage or addiction, service or vanity, creative power or learned
+helplessness. The law is neutral. Ethics determines the form worth stabilizing.
+
+\subsection*{Falsifiable consequences}
+
+A formal theory should risk failure. The following predictions distinguish embodied
+alchemy from unfalsifiable wishing.
 
 \begin{prediction}
-Process visualization combined with implementation intentions will outperform
-outcome visualization alone on externally scored goals. The advantage will be
-mediated by action frequency and execution quality.
+Process visualization combined with implementation intentions will outperform outcome
+visualization alone on externally scored goals. Action frequency and execution quality
+will mediate the advantage.
 \end{prediction}
 
 \begin{prediction}
-Restoring sleep and circadian regularity in disrupted participants will expand
-measured policy generation, feedback updating, and execution reliability on defined
-tasks.
+Repeated identity-consistent behavior will predict later self-description and
+identity-congruent choice more strongly when the behavior is voluntary, observable,
+and performed in a stable context.
 \end{prediction}
 
 \begin{prediction}
-Notification removal and context redesign will improve intentional control most in
-participants whose baseline behavior is strongly cue-driven.
+Restoring sleep and reducing interruption in disrupted participants will improve
+feedback updating and execution reliability, thereby increasing the number of
+reachable task outcomes.
 \end{prediction}
 
 \begin{prediction}
-Repeated directed attempts will explain apparent ``sudden'' manifestations better
-than outcome imagery alone when the action history is measured prospectively.
+Prospective action histories will explain many apparently sudden manifestations better
+than outcome imagery alone. Apparent breakthroughs will often follow accumulating
+attempts, skill, and social feedback.
 \end{prediction}
 
 \begin{prediction}
-Semantic DNA programming will fail blinded, multilaboratory testing unless a
-meaning-specific effect survives energy matching, translation, sham exposure, and
-open raw-data review.
-\end{prediction}
-
-\begin{prediction}
-Longitudinal measurement will not reveal one universal monthly
-brain-to-sacrum-to-brain secretion cycle across healthy adults.
+Semantic DNA programming will fail blinded multilaboratory testing unless a
+meaning-specific effect survives energy matching, translation, sham exposure, and open
+raw-data review.
 \end{prediction}
 
 \begin{prediction}
 Contemplative practice will change selected measures of attention, regulation, and
-self-transcendence through measurable mediators, but it will not reliably alter
+self-transcendent experience through measurable mediators, but will not reliably alter
 shielded random physical outcomes.
 \end{prediction}
 
-The final claim can now be stated simply. Human beings are powerful, but their power
-is not well described as omnipotent thought. It is the power to model what is absent,
-reorganize themselves around that model, and apply directed force to the world. The
-mind supplies a future before the future is physical. The body determines whether the
-future can be carried. Action gives the image public consequence. Feedback corrects
-the difference between desire and reality.
+\subsection*{Conclusion}
 
-This is how the mental plane descends into the physical plane. Not by skipping
-causality, but by entering it. Not every dream will materialize, because other agents,
-chance, time, and material constraints are real. Yet no designed future arrives
-without first being represented. The image is not the finished world. It is the first
-causal form of that world.
+Human beings are alchemical beings. They can receive a form that does not yet exist,
+hold it against the pressure of the present, reorganize themselves around it, and
+apply directed force until some part of the world takes its shape. This power is
+neither unlimited nor imaginary. It is bounded creation.
+
+The mental and astral vision descends into the physical realm by acquiring embodiment,
+policy, action, and persistence. Consciousness supplies direction. The body supplies
+capacity. Identity supplies continuity. Action supplies physical force. Feedback
+supplies truth. Repetition supplies time.
+
+The patent and Gateway memorandum matter because they show that unusual claims about
+fields and consciousness entered legal and institutional analysis. They deserve direct
+reading, not mythology. Their existence does not prove every proposed mechanism.
+Likewise, kundalini, sacred secretion, alchemy, and Christ consciousness preserve
+powerful architectures of transformation. Their symbolic convergence does not make
+every anatomical detail identical or experimentally established.
+
+The disciplined thesis is stronger than exaggeration. Consciousness participates in
+creating reality because a represented future can become an organizing cause in the
+present. The person who repeatedly gives that form a body, a policy, an action, and an
+artifact becomes increasingly continuous with it. One plays the part, produces the
+evidence, and becomes the part.
+
+Alchemy is therefore not the denial of matter. It is the education of matter by form
+through a conscious and embodied life. The Great Work is to choose the form carefully,
+prepare the vessel honestly, act without illusion, and continue until the world
+contains what once existed only in consciousness.
 
 \bibliographystyle{plainnat}
 \bibliography{refs}

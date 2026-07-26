@@ -69,6 +69,8 @@ The paper supports:
   inflammation, food environments, and some gut--brain interventions;
 - measurable effects of expectation, imagery, implementation intentions, habits,
   notifications, and contemplative practice;
+- the monitor-manipulation patent and Gateway memorandum as primary evidence of
+  proposed mechanisms and institutional interest;
 - manifestation as an embodied loop of intention, attention, policy, action, and
   feedback;
 - alchemy, kundalini, theosis, and Christ consciousness as meaningful interpretive
@@ -81,6 +83,7 @@ The paper does not present the following as established:
 - a universal whole-human processing rate;
 - depression as quantum decoherence;
 - voluntary selection of quantum timelines;
+- a patent grant or declassified memorandum as proof of replicated efficacy;
 - a coordinated global plot to suppress human divinity;
 - a monthly cerebrospinal sacred-secretion cycle.
 
@@ -102,7 +105,7 @@ a quantum cognitive computer or direct mental control of external events.
 11. Counterarguments, Limits, and Ethical Cautions
 12. Conclusion: Becoming the Broadcast
 
-The compiled paper is 24 pages and includes three original figures, a claim-audit
+The compiled paper is 26 pages and includes three original figures, a claim-audit
 table, two formal propositions, and seven falsifiable predictions.
 
 ## Build
@@ -122,5 +125,6 @@ pdflatex -interaction=nonstopmode -halt-on-error main.tex
 - `main.tex`: complete manuscript and original figures
 - `refs.bib`: research bibliography with DOI and source metadata
 - `main.pdf`: compiled publication
+- `sources/`: exact patent and declassified memorandum supplied for documentary audit
 - `docs/superpowers/specs/`: research and editorial design
 - `docs/superpowers/plans/`: end-to-end publication plan
